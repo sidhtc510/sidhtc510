@@ -415,7 +415,12 @@
 
 
 
-
+    @if ($message = Session::get('flash_message'))
+        <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>{{ $message }}</strong>
+        </div>
+    @endif
 
 
 
@@ -424,14 +429,15 @@
         @if (Route::has('login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @auth
-                    <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                <a href="{{ route('logout') }}">Logout
+                    ({{ auth()->user()->name }} | {{ auth()->user()->email }})
                 @else
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                    <a href="{{ route('login.create') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}"
+                    | 
+                        <a href="{{ route('register.create') }}"
                             class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                    @endif
+                    
                 @endauth
             </div>
         @endif

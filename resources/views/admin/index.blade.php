@@ -22,11 +22,22 @@
         <!-- Main content -->
         <section class="content">
 
-            <div class="" style="margin-left: 25px">
-                <a href="{{route('register.create')}}">Registration</a>
-                <span> | </span>
-                <a href="">Login</a>
-                <p><a href="{{ route('logout') }}">Logout</a></p>
+            @if ($message = Session::get('flash_message'))
+                <div class="alert alert-success alert-block">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>{{ $message }}</strong>
+                </div>
+            @endif
+
+
+
+            <div class="" style=" margin-left: 25px">
+            
+                <p><a href="{{ route('logout') }}">Logout Administrator @auth
+                     ({{ auth()->user()->name }} | {{ auth()->user()->email }})
+                @endauth
+                   
+                    </a></p>
             </div>
 
         </section>
