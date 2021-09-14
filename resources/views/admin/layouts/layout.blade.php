@@ -177,7 +177,7 @@
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
                         <a href="{{ route('admin.index') }}">
-                            Главная
+                            Главная Админка
                         </a>
                     </li>
                     <li class="m-2">
