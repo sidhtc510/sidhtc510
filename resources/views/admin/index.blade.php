@@ -23,7 +23,10 @@
         <section class="content">
 
             <div class="" style="margin-left: 25px">
-                
+                <a href="{{route('register.create')}}">Registration</a>
+                <span> | </span>
+                <a href="">Login</a>
+                <p><a href="{{ route('logout') }}">Logout</a></p>
             </div>
 
         </section>
