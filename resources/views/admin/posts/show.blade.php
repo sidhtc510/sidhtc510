@@ -33,8 +33,8 @@
                         <p>
                             <h7 class="card-subtitle mb-2 text-muted">Slug: <b>{{ $data->slug }}</b></h7>
                         </p>
-                        <p class="card-text">description: <b> {{ $data->description }}</b></p>
-                        <p class="card-text">content: <b> {{ $data->content }}</b></p>
+                        <p class="card-text">description: {!! $data->description !!}</p>
+                        <p class="card-text">content: {!! $data->content !!}</p>
                         <p class="card-text">category id: <b> {{ $data->category_id }}</b></p>
                         <p class="card-text">category title: <b> {{ $data->category->title }}</b></p>
                         <p class="card-text">tags: <b> {{ $data->tags->pluck('title')->join(', ') }}</b></p>

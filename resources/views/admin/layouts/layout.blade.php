@@ -10,6 +10,13 @@
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ asset('assets/admin/css/admin.css') }}">
 
+
+    <style>
+        .ck-editor__editable {
+            min-height: 300px;
+        }
+
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -196,7 +203,7 @@
                     </li>
                     <li class="m-2">
                         <a href="{{ route('posts.index') }}">
-                            Посты 
+                            Посты
                         </a>
                         <a href="{{ route('posts.create') }}" class="pl-4">
                             <i class="fas fa-plus"></i></a>
@@ -234,6 +241,71 @@
 
 
     <script src="{{ asset('assets/admin/js/admin.js') }}"></script>
+
+
+    <script src="{{ asset('assets/admin/ckeditor5/build/ckeditor.js') }}"></script>
+    <script src="{{ asset('assets/admin/ckfinder/ckfinder.js') }}"></script>
+
+    <script type="text/javascript">
+        ClassicEditor
+            .create(document.querySelector('#content'), {
+                ckfinder: {
+                    uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
+                },
+                toolbar: {
+					items: [
+						'|',
+						'heading',
+						'bold',
+						'italic',
+						'link',
+						'bulletedList',
+						'numberedList',
+						'|',
+						'alignment',
+						'outdent',
+						'indent',
+						'|',
+						'CKFinder',
+						'blockQuote',
+						'insertTable',
+						'mediaEmbed',
+						'undo',
+						'redo'
+					]
+				},
+				language: 'ru',
+				image: {
+					toolbar: [
+						'imageTextAlternative',
+						'imageStyle:inline',
+						'imageStyle:block',
+						'imageStyle:side'
+					]
+				},
+				table: {
+					contentToolbar: [
+						'tableColumn',
+						'tableRow',
+						'mergeTableCells'
+					]
+				},
+            })
+            .catch(function(error) {
+                console.error(error);
+            });
+
+
+
+        ClassicEditor
+            .create(document.querySelector('#description'), {
+               
+                toolbar: ['heading', '|', 'bold', 'italic', '|', 'undo', 'redo']
+            })
+            .catch(function(error) {
+                console.error(error);
+            });
+    </script>
 
 </body>
 
