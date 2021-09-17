@@ -17,6 +17,13 @@ const mix = require('laravel-mix');
 // ]);
 // 
 
+
+/**
+ * 
+ * 
+ * ADMIN
+ * 
+ */
 mix.styles([
     'resources/assets/admin/plugins/fontawesome-free/css/all.min.css',
     'resources/assets/admin/plugins/select2/css/select2.css',
@@ -40,3 +47,31 @@ mix.copyDirectory('resources/assets/admin/img', 'public/assets/admin/img')
 mix.copy('resources/assets/admin/css/adminlte.min.css.map', 'public/assets/admin/css/adminlte.min.css.map')
 mix.copy('resources/assets/admin/js/adminlte.min.js.map', 'public/assets/admin/js/adminlte.min.js.map')
 
+
+/**
+ * 
+ * 
+ * 
+ * FRONTEND
+ */
+
+ mix.styles([
+    'resources/assets/front/wgPiccoloTheme/css/bootstrap-responsive.css',
+    'resources/assets/front/wgPiccoloTheme/css/bootstrap.css',
+    'resources/assets/front/wgPiccoloTheme/css/custom-styles.css',
+    'resources/assets/front/wgPiccoloTheme/css/flexslider.css',
+    'resources/assets/front/wgPiccoloTheme/css/prettyPhoto.css',
+    'resources/assets/front/wgPiccoloTheme/css/style-ie.css',
+], 'public/assets/front/css/main.css')
+
+
+mix.scripts([
+    'resources/assets/front/wgPiccoloTheme/js/bootstrap.js',
+    'resources/assets/front/wgPiccoloTheme/js/jquery.custom.js',
+    'resources/assets/front/wgPiccoloTheme/js/jquery.easing.1.3.js',
+    'resources/assets/front/wgPiccoloTheme/js/jquery.flexslider.js',
+    'resources/assets/front/wgPiccoloTheme/js/jquery.prettyPhoto.js',
+    'resources/assets/front/wgPiccoloTheme/js/jquery.quicksand.js',
+], 'public/assets/front/js/script.js')
+
+mix.copyDirectory('resources/assets/front/wgPiccoloTheme/img', 'public/assets/front/img')
