@@ -107,7 +107,7 @@ class CategoryController extends Controller
 
         if (isset($request->checkSlug)) {
 
-        /*
+            /*
          *  при обновлении slug не меняется, но если так нужно, то пропиши
          *  $category ->slug = null; 
         */
@@ -130,8 +130,16 @@ class CategoryController extends Controller
     public function destroy($id)
     {
 
-        Category::destroy($id);
+        // Category::destroy($id);
+        // return Redirect::back()->with('flash_message', 'Category deleted!');
 
-        return Redirect::back()->with('flash_message', 'Category deleted!');
+
+        $category = Category::find($id);
+      
+        if ($category->posts->count()) {
+            return redirect()->route('categories.index')->with('error', 'Ошибка! Категория привязана к Посту');
+        }
+        $category->delete();
+        return redirect()->route('categories.index')->with('flash_message', 'Категория удалена');
     }
 }

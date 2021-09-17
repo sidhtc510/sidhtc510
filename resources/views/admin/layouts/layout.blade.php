@@ -253,43 +253,43 @@
                     uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
                 },
                 toolbar: {
-					items: [
-						'|',
-						'heading',
-						'bold',
-						'italic',
-						'link',
-						'bulletedList',
-						'numberedList',
-						'|',
-						'alignment',
-						'outdent',
-						'indent',
-						'|',
-						'CKFinder',
-						'blockQuote',
-						'insertTable',
-						'mediaEmbed',
-						'undo',
-						'redo'
-					]
-				},
-				language: 'ru',
-				image: {
-					toolbar: [
-						'imageTextAlternative',
-						'imageStyle:inline',
-						'imageStyle:block',
-						'imageStyle:side'
-					]
-				},
-				table: {
-					contentToolbar: [
-						'tableColumn',
-						'tableRow',
-						'mergeTableCells'
-					]
-				},
+                    items: [
+                        '|',
+                        'heading',
+                        'bold',
+                        'italic',
+                        'link',
+                        'bulletedList',
+                        'numberedList',
+                        '|',
+                        'alignment',
+                        'outdent',
+                        'indent',
+                        '|',
+                        'CKFinder',
+                        'blockQuote',
+                        'insertTable',
+                        'mediaEmbed',
+                        'undo',
+                        'redo'
+                    ]
+                },
+                language: 'ru',
+                image: {
+                    toolbar: [
+                        'imageTextAlternative',
+                        'imageStyle:inline',
+                        'imageStyle:block',
+                        'imageStyle:side'
+                    ]
+                },
+                table: {
+                    contentToolbar: [
+                        'tableColumn',
+                        'tableRow',
+                        'mergeTableCells'
+                    ]
+                },
             })
             .catch(function(error) {
                 console.error(error);
@@ -299,12 +299,18 @@
 
         ClassicEditor
             .create(document.querySelector('#description'), {
-               
+
                 toolbar: ['heading', '|', 'bold', 'italic', '|', 'undo', 'redo']
             })
             .catch(function(error) {
                 console.error(error);
             });
+
+
+
+        $(function() {
+            bsCustomFileInput.init();
+        });
     </script>
 
 </body>

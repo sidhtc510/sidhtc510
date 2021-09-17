@@ -48,7 +48,7 @@
                             <div class="form-group">
                                 <label for="title">Название поста</label>
                                 <input type="text" class="form-control" @error('title') is-invalid @enderror id="title"
-                                    name="title" placeholder="Название поста">
+                                    name="title" placeholder="Название поста" value="{{old('title')}}">
                             </div>
 
 
@@ -56,14 +56,14 @@
                             <div class="form-group">
                                 <label for="description">описание статьи</label>
                                 <textarea class="form-control" rows="2" name="description" id="description"
-                                    placeholder="Enter ..."></textarea>
+                                    placeholder="Enter ...">{{old('description')}}</textarea>
 
                             </div>
 
                             <div class="form-group">
                                 <label for="content">текст статьи</label>
                                 <textarea class="form-control" rows="5" name="content" id="content"
-                                    placeholder="Enter ..."></textarea>
+                                    placeholder="Enter ...">{{old('content')}}</textarea>
 
                             </div>
 

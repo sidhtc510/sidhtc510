@@ -35,13 +35,16 @@
     <div class="container">
 
         <div class="row header">
+
+           
             <!-- Begin Header -->
 
             <!-- Logo
         ================================================== -->
             <div class="span5 logo">
-                <a href="index.htm"><img src="{{ asset('assets/front/img/piccolo-logo.png') }}" alt="" /></a>
+                <a href="{{ route('home') }}"><img src="{{ asset('assets/front/img/piccolo-logo.png') }}" alt="" /></a>
                 <h5>Big Things... Small Packages</h5>
+                @if (Request::is('/')) <p>инфа с общего шаблона, но если на я сейчас на главной, то отобразится этот текст. так удобно вставлять классы для отображения стилей</p>  @endif
             </div>
 
             <!-- Main Navigation

@@ -27,6 +27,16 @@
                 <a href="{{ route('tags.create') }}" class="btn btn-primary mb-3">Добавить тег</a>
 
 
+                {{-- ERROR --}}
+                
+                @if ($message = Session::get('error'))
+                    <div class="alert alert-danger alert-block">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <strong>{{ $message }}</strong>
+                    </div>
+                @endif
+                {{-- END ERROR --}}
+                
                 @if ($message = Session::get('flash_message'))
                     <div class="alert alert-success alert-block">
                         <button type="button" class="close" data-dismiss="alert">×</button>

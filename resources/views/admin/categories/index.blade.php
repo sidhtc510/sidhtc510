@@ -23,9 +23,16 @@
         <section class="content">
 
             <div class="ml-3 mr-5">
-
                 <a href="{{ route('categories.create') }}" class="btn btn-primary mb-3">Добавить категорию</a>
+                {{-- ERROR --}}
 
+                @if ($message = Session::get('error'))
+                    <div class="alert alert-danger alert-block">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <strong>{{ $message }}</strong>
+                    </div>
+                @endif
+                {{-- END ERROR --}}
 
                 @if ($message = Session::get('flash_message'))
                     <div class="alert alert-success alert-block">
@@ -33,6 +40,7 @@
                         <strong>{{ $message }}</strong>
                     </div>
                 @endif
+
 
 
                 @if (count($categories) > 0)
@@ -86,7 +94,7 @@
 
                         {{ $categories->links('vendor.pagination.bootstrap-4') }}
                     </div>
-              
+
                 @else <h3>Категорий нет</h3>
                 @endif
             </div>

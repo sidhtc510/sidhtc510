@@ -39,6 +39,7 @@ mix.scripts([
     'resources/assets/admin/plugins/select2/js/select2.full.js',
     'resources/assets/admin/js/adminlte.min.js',
     'resources/assets/admin/js/demo.js',
+    'resources/assets/admin/plugins/bs_custom_file_input/bs-custom-file-input.js',
 ], 'public/assets/admin/js/admin.js')
 
 mix.copyDirectory('resources/assets/admin/plugins/fontawesome-free/webfonts', 'public/assets/admin/webfonts')
