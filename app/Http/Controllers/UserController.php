@@ -70,7 +70,7 @@ class UserController extends Controller
                 return redirect()->route('admin.index');
             } else {
 
-                session()->flash('flash_message', 'Welcome');
+                session()->flash('flash_message', 'Hello '. Auth::user()->name .', yo are loged in!');
                 return redirect()->home();
             }
         }

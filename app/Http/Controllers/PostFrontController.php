@@ -14,6 +14,6 @@ class PostFrontController extends Controller
 
     public function show()
     {
-        // 
+        return view('posts.show');
     }
 }
