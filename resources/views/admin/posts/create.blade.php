@@ -56,7 +56,7 @@
                             <div class="form-group">
                                 <label for="description">описание статьи</label>
                                 <textarea class="form-control" rows="2" name="description" id="description"
-                                    placeholder="Enter ...">{{old('description')}}</textarea>
+                                    placeholder="Enter ...">{{old('description')}} </textarea>
 
                             </div>
 
