@@ -17,7 +17,7 @@ use App\Http\Controllers\PostFrontController;
  * Front controllers
  */
 Route::get('/', [PostFrontController::class, 'index'])->name('home');
-Route::get('/article', [PostFrontController::class, 'show'])->name('posts.single');
+Route::get('/article/{slug}', [PostFrontController::class, 'show'])->name('posts.single');
 /****************************************************/
 
 

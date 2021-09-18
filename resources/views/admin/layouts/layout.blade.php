@@ -27,7 +27,7 @@
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i
+                    <a class="nav-link" data-widget="pushmenu" data-enable-remember="false" href="#" role="button"><i
                             class="fas fa-bars"></i></a>
                 </li>
                 {{-- <li class="nav-item d-none d-sm-inline-block">
@@ -171,7 +171,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="{{ url('/') }}" target="_blank" class="brand-link">
+            <a href="{{ url('/') }}" class="brand-link">
                 <img src="{{ asset('assets/admin/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text">На сайт</span>
@@ -203,7 +203,7 @@
                     </li>
                     <li class="m-2">
                         <a href="{{ route('posts.index') }}">
-                            Посты
+                            Посты 
                         </a>
                         <a href="{{ route('posts.create') }}" class="pl-4">
                             <i class="fas fa-plus"></i></a>

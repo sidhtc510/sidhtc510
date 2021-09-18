@@ -66,11 +66,12 @@ class UserController extends Controller
             
 
             if (Auth::user()->is_admin) {
-                session()->flash('flash_message', 'Welcome Admin');
-                return redirect()->route('admin.index');
+                session()->flash('flash_message', 'You are loged in as Admin');
+                return redirect()->home();
+                // return redirect()->route('admin.index');
             } else {
 
-                session()->flash('flash_message', 'Hello '. Auth::user()->name .', yo are loged in!');
+                session()->flash('flash_message', 'Hello '. Auth::user()->name .', you are loged in!');
                 return redirect()->home();
             }
         }

@@ -1,3 +1,15 @@
 .nav > li > a {
     display: inline-block;
 }
+
+.cutDescription > p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 25ch;
+}
+
+li.span3 .project-details {
+
+    height: 80px;
+}

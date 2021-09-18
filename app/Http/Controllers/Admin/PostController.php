@@ -31,8 +31,9 @@ class PostController extends Controller
 
     public function index()
     {
-        $posts = Post::orderBy("id", "desc")->with('category', 'tags')->paginate(5);
+        $posts = Post::orderBy("id", "desc")->with('category', 'tags')->paginate(9);
 
+    
         return view('admin.posts.index', compact('posts'));
     }
 

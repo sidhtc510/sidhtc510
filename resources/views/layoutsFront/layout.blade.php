@@ -3,7 +3,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Piccolo Theme</title>
+    <title>@yield('title')
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS
@@ -36,13 +37,14 @@
 
         <div class="row header">
 
-           
+
             <!-- Begin Header -->
 
             <!-- Logo
         ================================================== -->
             <div class="span5 logo">
-                <a href="{{ route('home') }}"><img src="{{ asset('assets/front/img/piccolo-logo.png') }}" alt="" /></a>
+                <a href="{{ route('home') }}"><img src="{{ asset('assets/front/img/piccolo-logo.png') }}"
+                        alt="" /></a>
                 <h5>Big Things... Small Packages</h5>
                 @if (Request::is('/')) <p>инфа с общего шаблона, но если на я сейчас на главной, то отобразится этот текст. так удобно вставлять классы для отображения стилей</p>  @endif
             </div>
@@ -78,20 +80,20 @@
                         </li>
                         <li><a href="page-contact.htm">Contact</a></li>
 
-                        @if (Route::has('login'))
-
+                        {{-- @if (Route::has('login')) --}}
                             @auth
                                 <li><a href="{{ route('logout') }}">Logout
-                                        ({{ auth()->user()->name }} | {{ auth()->user()->email }})</a></li>
-
+                                        ({{ auth()->user()->name }} | {{ auth()->user()->email }})</a>
+                                    @if (Auth::user()->is_admin)
+                                        <a href="{{ route('admin.index') }}">Админка </a>
+                                    @endif
+                                </li>
                             @else
                                 <li> <a href="{{ route('login.create') }}">Log in</a> <a
                                         href="{{ route('register.create') }}">Register</a> </li>
-
-
                             @endauth
+                        {{-- @endif --}}
 
-                        @endif
                     </ul>
 
                 </div>
