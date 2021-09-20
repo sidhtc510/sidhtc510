@@ -10,12 +10,12 @@ class PostFrontController extends Controller
     public function index()
     {
         $posts = Post::with('category')->orderBy('id', 'desc')->paginate(6);
-        return view('posts.index', compact('posts'));
+        return view('frontEndViews.index', compact('posts'));
     }
 
     public function show($slug)
     {
         $post = Post::find($slug);
-        return view('posts.show', compact('post'));
+        return view('frontEndViews.single', compact('post'));
     }
 }

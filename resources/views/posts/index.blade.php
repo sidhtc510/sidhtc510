@@ -77,7 +77,9 @@
                             </span>
                             <a href="{{route('posts.single', ['slug' => $post->slug])}}"><img
                                     src="{{$post->getImage()}}" alt="Gallery"></a>
-                            <span class="project-details"><a href="{{route('posts.single', ['slug' => $post->slug])}}">{{$post->title}}</a><span class="cutDescription">{!! $post->description !!}</span></span>
+                            <span class="project-details"><a href="{{route('posts.single', ['slug' => $post->slug])}}">{{$post->title}}</a><span class="cutDescription">{!! $post->description !!}</span>
+                            <p>Категория: {{$post->category->title}}</p>
+                        </span>
                         </li>
                     @endforeach
 

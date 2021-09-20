@@ -54,25 +54,39 @@ mix.copy('resources/assets/admin/js/adminlte.min.js.map', 'public/assets/admin/j
  * 
  * 
  * FRONTEND
+ * resources\assets\front\bst
+ * 
+ * 
  */
 
  mix.styles([
-    'resources/assets/front/wgPiccoloTheme/css/bootstrap-responsive.css',
-    'resources/assets/front/wgPiccoloTheme/css/bootstrap.css',
-    'resources/assets/front/wgPiccoloTheme/css/custom-styles.css',
-    'resources/assets/front/wgPiccoloTheme/css/flexslider.css',
-    'resources/assets/front/wgPiccoloTheme/css/prettyPhoto.css',
-    'resources/assets/front/wgPiccoloTheme/css/style-ie.css',
+    
+    'resources/assets/front/bst/vendor/animate.css/animate.min.css',
+    'resources/assets/front/bst/vendor/aos/aos.css',
+    'resources/assets/front/bst/vendor/bootstrap/css/bootstrap.min.css',
+    'resources/assets/front/bst/vendor/bootstrap-icons/bootstrap-icons.css',
+    'resources/assets/front/bst/vendor/glightbox/css/glightbox.min.css',
+    'resources/assets/front/bst/vendor/remixicon/remixicon.css',
+    'resources/assets/front/bst/vendor/swiper/swiper-bundle.min.css',
+    'resources/assets/front/bst/css/style.css',
+
 ], 'public/assets/front/css/main.css')
 
 
+
+
+
+
 mix.scripts([
-    'resources/assets/front/wgPiccoloTheme/js/bootstrap.js',
-    'resources/assets/front/wgPiccoloTheme/js/jquery.custom.js',
-    'resources/assets/front/wgPiccoloTheme/js/jquery.easing.1.3.js',
-    'resources/assets/front/wgPiccoloTheme/js/jquery.flexslider.js',
-    'resources/assets/front/wgPiccoloTheme/js/jquery.prettyPhoto.js',
-    'resources/assets/front/wgPiccoloTheme/js/jquery.quicksand.js',
+    'resources/assets/front/bst/vendor/aos/aos.js',
+    'resources/assets/front/bst/vendor/bootstrap/js/bootstrap.bundle.min.js',
+    'resources/assets/front/bst/vendor/glightbox/js/glightbox.min.js',
+    'resources/assets/front/bst/vendor/isotope-layout/isotope.pkgd.min.js',
+    'resources/assets/front/bst/vendor/php-email-form/validate.js',
+    'resources/assets/front/bst/vendor/swiper/swiper-bundle.min.js',
+    'resources/assets/front/bst/vendor/waypoints/noframework.waypoints.js',
+    'resources/assets/front/bst/js/main.js',
+    
 ], 'public/assets/front/js/script.js')
 
-mix.copyDirectory('resources/assets/front/wgPiccoloTheme/img', 'public/assets/front/img')
+mix.copyDirectory('resources/assets/front/bst/img', 'public/assets/front/img')
