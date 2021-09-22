@@ -1,7 +1,6 @@
 @extends('frontEndViews.layout')
 
-@section('title', 'главная страница')   <!-- если есть второй аргумент то можно не использовать @ endsection -->
-
+@section('title', 'Категория') 
 @section('content')
        
     
@@ -11,7 +10,7 @@
 
 
                   <div class="containerTitle">
-                    <h2>Список всех постов</h2>
+                    <h2>Список постов категории {{$category->title}}</h2>
                   </div>
 
                     @foreach ($posts as $post)
@@ -28,7 +27,7 @@
                     <div class="entry-meta">
                       <ul>
                         <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">John Doe</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-folder"></i> <a href="{{route('categories.single', ['slug'=> $post->category->slug])}}">Category: {{$post->category->title}}</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-folder"></i> <a href="{{route('categories.single', ['slug'=> $category->slug])}}">Category: {{$category->title}}</a></li>
                         <li class="d-flex align-items-center"><i class="bi bi-clock"></i> {{$post->getPostDate()}}</li>
                         <li class="d-flex align-items-center"><i class="bi bi-eye"></i>Views: {{$post->views}}</li>
                       </ul>

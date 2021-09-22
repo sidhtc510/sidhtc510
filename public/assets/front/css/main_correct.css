@@ -1,0 +1,12 @@
+.entry-content img{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.containerTitle{
+    border: 1px solid #dedede;
+    border-radius: 5px 5px 0 0;
+    background-color: #f5f5f5;
+    padding: 10px 0 0 15px;
+}

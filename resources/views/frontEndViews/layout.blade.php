@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Blog - Company Bootstrap Template</title>
+    <title>@yield('title')
+    </title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -103,9 +104,9 @@
 
                 <div class="d-flex justify-content-between align-items-center">
                     <h2>Blog</h2>
-                    <p><small>@if (Request::is('/')) <p>инфа с общего шаблона, но если я сейчас на главной, то отобразится этот текст. так удобно вставлять классы для отображения стилей</p>  @endif</small></p>
+                    <p><small>@if (Route::is('home')) <p>инфа с общего шаблона, но если я сейчас на главной, то отобразится этот текст. так удобно вставлять классы для отображения стилей</p>  @endif</small></p>
                     <ol>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="{{route('home')}}">Home</a></li>
                         <li>Blog</li>
                     </ol>
                 </div>

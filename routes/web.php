@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TagFrontController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\PostFrontController;
-use App\Http\Controllers\Admin\MainController;
 // use App\Http\Controllers\Admin\destroyImage;
+use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\CategoryFrontController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -20,6 +21,7 @@ use App\Http\Controllers\Admin\CategoryController;
 Route::get('/', [PostFrontController::class, 'index'])->name('home');
 Route::get('/article/{slug}', [PostFrontController::class, 'show'])->name('posts.single');
 Route::get('/category/{slug}', [CategoryFrontController::class, 'show'])->name('categories.single');
+Route::get('/tag/{slug}', [TagFrontController::class, 'show'])->name('tags.single');
 /****************************************************/
 
 

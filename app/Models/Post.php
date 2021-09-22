@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
@@ -64,5 +66,11 @@ class Post extends Model
             return asset("noimage.jpg");
         }
         return asset("uploads/{$this->thumbnail}");
+    }
+
+
+    public function getPostDate(){
+        // return Carbon::createFromFormat('Y-m-d H:i:s', $this->created_at)->format('d F, Y');
+        return Carbon::parse($this->created_at)->diffForHumans();
     }
 }

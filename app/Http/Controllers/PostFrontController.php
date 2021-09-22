@@ -15,7 +15,10 @@ class PostFrontController extends Controller
 
     public function show($slug)
     {
-        $post = Post::find($slug);
+        $post = Post::where('slug', $slug)->firstOrFail();
+        $post->views += 1;
+        $post->update();
+
         return view('frontEndViews.single', compact('post'));
     }
 }

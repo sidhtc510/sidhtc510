@@ -1,7 +1,6 @@
 @extends('frontEndViews.layout')
 
-@section('title', 'главная страница')   <!-- если есть второй аргумент то можно не использовать @ endsection -->
-
+@section('title', 'Тэг') 
 @section('content')
        
     
@@ -11,7 +10,7 @@
 
 
                   <div class="containerTitle">
-                    <h2>Список всех постов</h2>
+                    <h2>Список постов Тега {{$tag->title}}</h2>
                   </div>
 
                     @foreach ($posts as $post)
