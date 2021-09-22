@@ -208,6 +208,14 @@
                         <a href="{{ route('posts.create') }}" class="pl-4">
                             <i class="fas fa-plus"></i></a>
                     </li>
+
+                    <li class="m-2">
+                        <a href="{{ route('sliders.index') }}">
+                            Слайдер 
+                        </a>
+                        <a href="{{ route('sliders.create') }}" class="pl-4">
+                            <i class="fas fa-plus"></i></a>
+                    </li>
                 </ul>
 
             </div>

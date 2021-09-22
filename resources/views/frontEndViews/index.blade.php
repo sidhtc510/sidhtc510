@@ -1,60 +1,98 @@
 @extends('frontEndViews.layout')
 
-@section('title', 'главная страница')   <!-- если есть второй аргумент то можно не использовать @ endsection -->
+@section('title', 'главная страница')
+<!-- если есть второй аргумент то можно не использовать @ endsection -->
 
 @section('content')
-       
-    
-              <div class="row">
-      
-                <div class="col-lg-8 entries">
 
-                  <div class="containerTitle">
-                    <h2>Список всех постов</h2>
-                  </div>
 
-                    @foreach ($posts as $post)
-                        <article class="entry">
-      
-                    <div class="entry-img">
-                      <img src="{{$post->getImage()}}" alt="" class="img-fluid">
+    {{-- слайдер --}}
+    <div class="container">
+        <div class="slideWrapper">
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://via.placeholder.com/640x150" alt="First slide">
                     </div>
-      
-                    <h2 class="entry-title">
-                      <a href="{{route('posts.single', ['slug' => $post->slug])}}">{{$post->title}}</a>
-                    </h2>
-      
-                    <div class="entry-meta">
-                      <ul>
-                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">John Doe</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-folder"></i> <a href="{{route('categories.single', ['slug'=> $post->category->slug])}}">Category: {{$post->category->title}}</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> {{$post->getPostDate()}}</li>
-                        <li class="d-flex align-items-center"><i class="bi bi-eye"></i>Views: {{$post->views}}</li>
-                      </ul>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://via.placeholder.com/640x150" alt="Second slide">
                     </div>
-      
-                    <div class="entry-content">
-                      <p>
-                      {!!$post->description!!}
-                      </p>
-                      <div class="read-more">
-                        <a href="{{route('posts.single', ['slug' => $post->slug])}}">Read More</a>
-                      </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://via.placeholder.com/640x150" alt="Third slide">
                     </div>
-      
-                  </article><!-- End blog entry -->
-                    @endforeach
-                  
-      
-      
-                  @include('frontEndViews.pagination')
-      
-                </div><!-- End blog entries list -->
-      
-                @include('frontEndViews.sideBar')
-      
-              </div>
-      
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-          </section><!-- End Blog Section -->
+        </div>
+    </div>
+
+
+
+    
+    <div class="row">
+
+        <div class="col-lg-8 entries">
+
+            <div class="containerTitle">
+                <h2>Список всех постов</h2>
+            </div>
+
+            @foreach ($posts as $post)
+                <article class="entry">
+
+                    <div class="entry-img">
+                        <img src="{{ $post->getImage() }}" alt="" class="img-fluid">
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="{{ route('posts.single', ['slug' => $post->slug]) }}">{{ $post->title }}</a>
+                    </h2>
+
+                    <div class="entry-meta">
+                        <ul>
+                            <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">John Doe</a>
+                            </li>
+                            <li class="d-flex align-items-center"><i class="bi bi-folder"></i> <a
+                                    href="{{ route('categories.single', ['slug' => $post->category->slug]) }}">Category:
+                                    {{ $post->category->title }}</a></li>
+                            <li class="d-flex align-items-center"><i class="bi bi-clock"></i>
+                                {{ $post->getPostDate() }}
+                            </li>
+                            <li class="d-flex align-items-center"><i class="bi bi-eye"></i>Views: {{ $post->views }}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="entry-content">
+                        <p>
+                            {!! $post->description !!}
+                        </p>
+                        <div class="read-more">
+                            <a href="{{ route('posts.single', ['slug' => $post->slug]) }}">Read More</a>
+                        </div>
+                    </div>
+
+                </article><!-- End blog entry -->
+            @endforeach
+
+
+
+            @include('frontEndViews.pagination')
+
+        </div><!-- End blog entries list -->
+
+        @include('frontEndViews.sideBar')
+
+    </div>
+
+    </div>
+    </section><!-- End Blog Section -->
 @endsection
