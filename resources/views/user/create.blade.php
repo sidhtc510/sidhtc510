@@ -1,32 +1,26 @@
-@extends('layoutsFront.layout')
+@extends('frontEndViews.layout')
 
-{{-- @section('headline')
-
-@endsection --}}
+@section('title', 'Регистрация')
+<!-- если есть второй аргумент то можно не использовать @ endsection -->
 
 @section('content')
 
 
+    <div class="row">
+
+        <div class="col-lg-8 entries">
+
+            <div class="containerTitle">
+                <h2>Регистрация</h2>
+            </div>
 
 
-    {{-- ERROR --}}
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-    {{-- END ERROR --}}
 
-    <div class="container" style="width: 25%">
 
-        <div class="register-box">
-            {{-- <div class="register-logo">
-            <b>Registration</b>
-        </div> --}}
+            <div class="register-box">
+                {{-- <div class="register-logo">
+                <b>Login</b>
+            </div> --}}
 
             <div class="card">
                 <div class="card-body register-card-body">
@@ -37,37 +31,21 @@
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" name="name" placeholder="Name"
                                 value="{{ old('name') }}">
-                            <div class="input-group-append">
-                                <div class="input-group-text">
-                                    <span class="fas fa-user"></span>
-                                </div>
-                            </div>
+                          
                         </div>
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" name="email" placeholder="Email"
                                 value="{{ old('email') }}">
-                            <div class="input-group-append">
-                                <div class="input-group-text">
-                                    <span class="fas fa-envelope"></span>
-                                </div>
-                            </div>
+                        
                         </div>
                         <div class="input-group mb-3">
                             <input type="password" class="form-control" name="password" placeholder="Password">
-                            <div class="input-group-append">
-                                <div class="input-group-text">
-                                    <span class="fas fa-lock"></span>
-                                </div>
-                            </div>
+                         
                         </div>
                         <div class="input-group mb-3">
                             <input type="password" class="form-control" name="password_confirmation"
                                 placeholder="Retype password">
-                            <div class="input-group-append">
-                                <div class="input-group-text">
-                                    <span class="fas fa-lock"></span>
-                                </div>
-                            </div>
+                         
                         </div>
                         <div class="row">
                             <!-- /.col -->
@@ -84,8 +62,13 @@
                 </div>
                 <!-- /.form-box -->
             </div><!-- /.card -->
-        </div>
-    </div>
-    <!-- /.register-box -->
+            </div>
+        </div><!-- End blog entries list -->
 
+        @include('frontEndViews.sideBar')
+
+    </div>
+
+    </div>
+    </section><!-- End Blog Section -->
 @endsection

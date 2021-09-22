@@ -120,6 +120,7 @@
             <div class="container" data-aos="fade-up">                  
 
                 @include('frontEndViews.errorSuccess')
+                
                 @yield('content')
 
     </main><!-- End #main -->
@@ -205,9 +206,29 @@
     <!-- JavaScript Bundle with Popper -->
 
     <script src="{{ asset('assets/front/js/script.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script>
+    </script> --}}
+
+    
+<script src="{{ asset('assets/front/js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{ asset('assets/front/js/bootstrap.min.js')}}"></script>
+
+<script>
+ $('#btnNavToggle').click(function() {
+    if ( $('#content-wrap').hasClass('navOpen') ){
+        $('#content-wrap').animate({'left': 0}).removeClass('navOpen');
+    } else {
+        $('#content-wrap').animate({'left': 250}).addClass('navOpen');
+    }
+
+});
+
+/*--END Toggle--*/
+
+</script>
+
+
 </body>
 
 </html>

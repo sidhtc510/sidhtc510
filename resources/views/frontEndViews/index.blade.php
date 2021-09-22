@@ -9,7 +9,6 @@
       
                 <div class="col-lg-8 entries">
 
-
                   <div class="containerTitle">
                     <h2>Список всех постов</h2>
                   </div>
