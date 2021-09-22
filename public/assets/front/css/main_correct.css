@@ -1,15 +1,21 @@
-.entry-content img{
+.entry-content img {
     width: 100%;
     margin: 0;
     overflow: hidden;
 }
 
-.containerTitle{
+.containerTitle {
     border: 1px solid #dedede;
     border-radius: 5px 5px 0 0;
     background-color: #f5f5f5;
     padding: 10px 0 0 15px;
 }
-.slideWrapper{
-margin: -30px 0 10px 0;
+
+.breadcrumbs {
+    display: none;
+}
+
+.blog {
+    margin: 80px 0 0 0;
+    padding: 0;
 }

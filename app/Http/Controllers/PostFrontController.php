@@ -10,7 +10,7 @@ class PostFrontController extends Controller
 {
     public function index()
     {
-        $posts = Post::with('category')->orderBy('id', 'desc')->paginate(6);
+        $posts = Post::with('category')->orderBy('id', 'desc')->paginate(3);
         $sliders = Slider::all();
         return view('frontEndViews.index', compact('posts', 'sliders'));
     }

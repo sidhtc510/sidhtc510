@@ -106,7 +106,7 @@
                     <h2>Blog</h2>
                     <p><small>@if (Route::is('home')) <p>инфа с общего шаблона, но если я сейчас на главной, то отобразится этот текст. так удобно вставлять классы для отображения стилей</p>  @endif</small></p>
                     <ol>
-                        <li><a href="{{route('home')}}">Home</a></li>
+                        <li><a href="{{ route('home') }}">Home</a></li>
                         <li>Blog</li>
                     </ol>
                 </div>
@@ -117,10 +117,10 @@
 
         <!-- ======= Blog Section ======= -->
         <section id="blog" class="blog">
-            <div class="container" data-aos="fade-up">                  
+            <div class="container" data-aos="fade-up">
 
                 @include('frontEndViews.errorSuccess')
-                
+
                 @yield('content')
 
     </main><!-- End #main -->
@@ -204,29 +204,28 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
     <!-- JavaScript Bundle with Popper -->
-
+    <script src="{{ asset('assets/front/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('assets/front/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('assets/front/js/script.js') }}"></script>
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script> --}}
 
-    
-<script src="{{ asset('assets/front/js/jquery-3.3.1.min.js')}}"></script>
-<script src="{{ asset('assets/front/js/bootstrap.min.js')}}"></script>
 
-<script>
- $('#btnNavToggle').click(function() {
-    if ( $('#content-wrap').hasClass('navOpen') ){
-        $('#content-wrap').animate({'left': 0}).removeClass('navOpen');
-    } else {
-        $('#content-wrap').animate({'left': 250}).addClass('navOpen');
-    }
 
-});
 
-/*--END Toggle--*/
+    <script>
+        //  $('#btnNavToggle').click(function() {
+        //     if ( $('#content-wrap').hasClass('navOpen') ){
+        //         $('#content-wrap').animate({'left': 0}).removeClass('navOpen');
+        //     } else {
+        //         $('#content-wrap').animate({'left': 250}).addClass('navOpen');
+        //     }
 
-</script>
+        // });
+
+        /*--END Toggle--*/
+    </script>
 
 
 </body>
