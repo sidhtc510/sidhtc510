@@ -68,7 +68,7 @@
                                                 class="float-left">
                                                 @csrf @method('DELETE')
                                                 <button type="submit" class="btn btn-danger btn-sm"
-                                                    onclick="return confirm('Удалить \'{{ $slider->title }} \' ?' )">
+                                                    onclick="return confirm('Удалить картинку?' )">
                                                     <i class="fas fa-trash-alt"></i>
                                                 </button>
                                             </form>

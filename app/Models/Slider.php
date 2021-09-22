@@ -34,9 +34,7 @@ class slider extends Model
     }
 
     public function getImage(){
-        if(!$this->thumbnail){
-            return asset("noimage.jpg");
-        }
+        
         return asset("uploads/{$this->thumbnail}");
     }
 

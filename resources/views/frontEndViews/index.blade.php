@@ -12,15 +12,23 @@
 
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://via.placeholder.com/640x150" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="https://via.placeholder.com/640x150" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="https://via.placeholder.com/640x150" alt="Third slide">
-                    </div>
+
+                    
+                    @php
+                        $is_active = true;
+                    @endphp
+                    @foreach ($sliders as $slider)
+                        <div class="carousel-item @php if ($is_active) echo ' active' @endphp ">
+                            <img class="d-block w-100" src="{{ $slider->getImage() }}">
+                            {{-- img placeholder https://via.placeholder.com/640x150 --}}
+                        </div>
+                        @php
+                            if ($is_active) {
+                                $is_active = false;
+                            }
+                        @endphp
+                    @endforeach
+
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -36,7 +44,7 @@
 
 
 
-    
+
     <div class="row">
 
         <div class="col-lg-8 entries">
