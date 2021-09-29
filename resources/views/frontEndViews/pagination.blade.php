@@ -7,5 +7,5 @@
 </div> --}}
 
 <div class="pagination">
-    {{ $posts->links('vendor.pagination.bootstrap-4') }}
+    {{ $posts->appends(['s' => request()->s])->links('vendor.pagination.bootstrap-4') }}
 </div>

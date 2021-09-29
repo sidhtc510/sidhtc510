@@ -73,4 +73,10 @@ class Post extends Model
         // return Carbon::createFromFormat('Y-m-d H:i:s', $this->created_at)->format('d F, Y');
         return Carbon::parse($this->created_at)->diffForHumans();
     }
+
+
+    public function scopeLike($query, $s){
+        return $query->where('title', 'LIKE', "%{$s}%")->orWhere('content', 'LIKE', "%{$s}%");
+        
+    }
 }

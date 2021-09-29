@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
-use App\Models\Category;
-use App\Models\Post;
 use App\Models\Tag;
+use App\Models\Post;
+use App\Models\Category;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\ServiceProvider;
 
@@ -27,6 +29,22 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+
+        /**
+         *   отобразит на страницу все sql запросы
+         *
+         */
+        // DB::listen(function ($query) {
+        //     dump($query->sql, $query->bindings);
+        // });
+
+        // DB::listen(function ($query) {
+        //     dump($query->sql);
+        //     Log::channel('mysqllogs')->info($query->sql);
+        //     Log::info($query->sql);
+        // });
+
 
 
         view()->composer('frontEndViews.sideBar', function ($view) {
@@ -73,7 +91,7 @@ class AppServiceProvider extends ServiceProvider
                 $sideBar_tags = Cache::get('sideBar_tags');
             } else {
                 $sideBar_tags = Tag::withCount('posts')->orderBy('posts_count', 'desc')->limit(10)->get();
-                Cache::put('sideBar_tags', $sideBar_tags, 86400);// ложу теги в кеш на сутки  (86400 секунд)
+                Cache::put('sideBar_tags', $sideBar_tags, 86400); // ложу теги в кеш на сутки  (86400 секунд)
             }
 
             $view->with('sideBar_tags', $sideBar_tags);

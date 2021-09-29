@@ -4,8 +4,10 @@
 
         <h3 class="sidebar-title">Search</h3>
         <div class="sidebar-item search-form">
-            <form action="">
-                <input type="text">
+            <form method="get" action="{{route('search')}}">
+                <input type="text" name="s" @error('s')
+                   class ="is-invalid"
+                 @enderror required value="{{request()->s}}">
                 <button type="submit"><i class="bi bi-search"></i></button>
             </form>
         </div><!-- End sidebar search formn-->

@@ -78,7 +78,7 @@
                         <li class="dropdown"><a href="#"><span>Cabinet</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                                 <li><a href="{{ route('login.create') }}">Login </a></li>
-                                <li><a href="{{ route('register.create') }}">Registrtion</a></li>
+                                <li><a href="{{ route('register.create') }}">Registration</a></li>
                             </ul>
                         </li>
 

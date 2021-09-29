@@ -8,6 +8,7 @@ use App\Http\Controllers\PostFrontController;
 // use App\Http\Controllers\Admin\destroyImage;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\SearchFrontController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\CategoryFrontController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -20,6 +21,7 @@ Route::get('/', [PostFrontController::class, 'index'])->name('home');
 Route::get('/article/{slug}', [PostFrontController::class, 'show'])->name('posts.single');
 Route::get('/category/{slug}', [CategoryFrontController::class, 'show'])->name('categories.single');
 Route::get('/tag/{slug}', [TagFrontController::class, 'show'])->name('tags.single');
+Route::get('/search', [SearchFrontController::class, 'index'])->name('search');
 /****************************************************/
 
 
