@@ -11,7 +11,7 @@
         <div class="col-lg-8 entries">
 
             <div class="containerTitle">
-                <h2>Запрос: {{ $s }}</h2>
+                <h2>По запросу ' {{ $s }} ', найдено {{$posts->total()}} постов</h2>
             </div>
 
             @if ($posts->count())

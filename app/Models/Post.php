@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Support\Facades\DB;
 
 class Post extends Model
 {
@@ -77,6 +78,5 @@ class Post extends Model
 
     public function scopeLike($query, $s){
         return $query->where('title', 'LIKE', "%{$s}%")->orWhere('content', 'LIKE', "%{$s}%");
-        
     }
 }

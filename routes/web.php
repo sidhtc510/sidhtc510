@@ -3,15 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TagFrontController;
-use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\PostFrontController;
-// use App\Http\Controllers\Admin\destroyImage;
+use App\Http\Controllers\SearchFrontController;
+use App\Http\Controllers\CategoryFrontController;
+use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\PostController;
-use App\Http\Controllers\SearchFrontController;
 use App\Http\Controllers\Admin\SliderController;
-use App\Http\Controllers\CategoryFrontController;
 use App\Http\Controllers\Admin\CategoryController;
+
 
 /**
  * 
@@ -37,9 +37,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('/tags', TagController::class);
     Route::resource('/posts', PostController::class);
     Route::get('/delImg', [PostController::class, 'destroyImg'])->name('destroyImage');
-
     Route::resource('/sliders', SliderController::class);
-
 });
 /****************************************************/
 
