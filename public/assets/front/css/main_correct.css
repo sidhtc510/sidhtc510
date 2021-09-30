@@ -24,3 +24,11 @@
     border: 2px solid #ff0000 !important;
     background-color: #ffe5e7;
 }
+
+.blog .entry .entry-img {
+    border-radius: 20px;
+}
+
+.img-fluid {
+    min-width: -webkit-fill-available;
+}

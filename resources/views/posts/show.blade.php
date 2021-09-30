@@ -93,7 +93,7 @@
                </ul>
             
                 <!-- Comment Form -->
-                <div class="comment-form-container">
+                {{-- <div class="comment-form-container">
                     <h6>Leave a Comment</h6>
                     <form action="#" id="comment-form">
                         <div class="input-prepend">
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> --}}
         </section><!-- Close comments section-->
 
         </div><!--Close container row-->

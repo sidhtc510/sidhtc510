@@ -68,8 +68,8 @@
 
             </article><!-- End blog entry -->
 
-            <div class="blog-author d-flex align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" class="rounded-circle float-left" alt="">
+            {{-- <div class="blog-author d-flex align-items-center"> --}}
+                {{-- <img src="assets/img/blog/blog-author.jpg" class="rounded-circle float-left" alt="">
                 <div>
                     <h4>Jane Smith</h4>
                     <div class="social-links">
@@ -81,12 +81,12 @@
                         Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas
                         repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
                     </p>
-                </div>
-            </div><!-- End blog author bio -->
+                </div> --}}
+            {{-- </div><!-- End blog author bio --> --}}
 
-            <div class="blog-comments">
+            {{-- <div class="blog-comments"> --}}
 
-                <h4 class="comments-count">8 Comments</h4>
+                {{-- <h4 class="comments-count">8 Comments</h4>
 
                 <div id="comment-1" class="comment">
                     <div class="d-flex">
@@ -197,9 +197,9 @@
                         </div>
                     </div>
 
-                </div><!-- End comment #4 -->
+                </div><!-- End comment #4 --> --}}
 
-                <div class="reply-form">
+                {{-- <div class="reply-form">
                     <h4>Leave a Reply</h4>
                     <p>Your email address will not be published. Required fields are marked * </p>
                     <form action="">
@@ -225,9 +225,9 @@
 
                     </form>
 
-                </div>
+                </div> --}}
 
-            </div><!-- End blog comments -->
+            {{-- </div><!-- End blog comments --> --}}
 
         </div><!-- End blog entries list -->
 
