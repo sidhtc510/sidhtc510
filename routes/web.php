@@ -12,13 +12,14 @@ use App\Http\Controllers\SearchFrontController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\CategoryFrontController;
 use App\Http\Controllers\Admin\CategoryController;
-
+use App\Http\Controllers\TestLenovoController;
 
 /**
  * 
  * Front controllers
  */
 Route::get('/', [PostFrontController::class, 'index'])->name('home');
+Route::get('/lenovo', [TestLenovoController::class, 'index'])->name('lenovo');
 Route::get('/article/{slug}', [PostFrontController::class, 'show'])->name('posts.single');
 Route::get('/category/{slug}', [CategoryFrontController::class, 'show'])->name('categories.single');
 Route::get('/tag/{slug}', [TagFrontController::class, 'show'])->name('tags.single');
