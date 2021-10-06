@@ -188,6 +188,12 @@
                         </a>
                     </li>
                     <li class="m-2">
+                        <a href="{{ route('users.index') }}">
+                            Пользователи
+                        </a>
+                       
+                    </li>
+                    <li class="m-2">
                         <a href="{{ route('categories.index') }}">
                             Категории
                         </a>

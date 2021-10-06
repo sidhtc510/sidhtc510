@@ -12,6 +12,7 @@ use App\Http\Controllers\SearchFrontController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\CategoryFrontController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\TestLenovoController;
 
 /**
@@ -35,6 +36,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('/categories', CategoryController::class);
     Route::resource('/tags', TagController::class);
     Route::resource('/posts', PostController::class);
+    Route::resource('/users', AdminUserController::class);
     Route::get('/delImg', [PostController::class, 'destroyImg'])->name('destroyImage');
     Route::get('/cc', [ClearCacheController::class, 'index'])->name('clearCache');
     Route::resource('/sliders', SliderController::class);
