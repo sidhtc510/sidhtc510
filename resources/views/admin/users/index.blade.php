@@ -58,7 +58,7 @@
                             <tbody>
                                 @foreach ($users as $user)
                                     <tr @if ($user->banned == 1)
-                                        style="background-color: #eaa4a4; color: #a8d3f7;"
+                                        style="background-color: #eaa4a4;"
                                 @endif
                                 >
                                 <td>{{ $user->id }}</td>

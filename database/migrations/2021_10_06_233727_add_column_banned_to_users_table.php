@@ -14,7 +14,7 @@ class AddColumnBannedToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table -> boolean('banned')->after('updated_at');
+            $table -> boolean('banned')->after('updated_at')->default(0);
         });
     }
 
