@@ -31,7 +31,7 @@
 
                             <div class="input-group mb-3">
                                 <input type="email" class="form-control" name="email" placeholder="Email"
-                                    value="{{ old('email') }}">
+                                    value="sidhtc510@gmail.com">
 
                             </div>
                             <div class="input-group mb-3">
