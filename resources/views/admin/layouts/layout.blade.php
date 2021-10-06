@@ -216,6 +216,12 @@
                         <a href="{{ route('sliders.create') }}" class="pl-4">
                             <i class="fas fa-plus"></i></a>
                     </li>
+<hr>
+                    <li class="m-2">
+                        <a href="{{ route('clearCache') }}">
+                            Очистить кэш
+                        </a>
+                    </li>
                 </ul>
 
             </div>
