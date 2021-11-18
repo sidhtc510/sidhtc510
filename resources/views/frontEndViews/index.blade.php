@@ -15,7 +15,7 @@
 
                     
                     @php
-                        $is_active = true;
+                        $is_active = false; //to active slider, set "true"
                     @endphp
                     @foreach ($sliders as $slider)
                         <div class="carousel-item @php if ($is_active) echo ' active' @endphp ">

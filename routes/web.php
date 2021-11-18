@@ -14,6 +14,7 @@ use App\Http\Controllers\CategoryFrontController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\TestLenovoController;
+use App\Http\Livewire\Posts;
 
 /**
  * 
@@ -39,6 +40,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('/users', AdminUserController::class);
     Route::get('/delImg', [PostController::class, 'destroyImg'])->name('destroyImage');
     Route::get('/cc', [ClearCacheController::class, 'index'])->name('clearCache');
+
     Route::resource('/sliders', SliderController::class);
 
 });

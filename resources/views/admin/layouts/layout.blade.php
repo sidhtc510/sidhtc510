@@ -17,6 +17,7 @@
         }
 
     </style>
+    @livewireStyles
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -332,7 +333,7 @@
             bsCustomFileInput.init();
         });
     </script>
-
+@livewireScripts
 </body>
 
 </html>
