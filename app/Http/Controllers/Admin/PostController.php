@@ -13,27 +13,9 @@ use Illuminate\Support\Facades\Storage;
 class PostController extends Controller
 {
 
-    public function destroyImg(Request $request)
-    {
-        $post = Post::find($request->id);
-
-        Storage::delete($post->thumbnail);
-
-        $post->thumbnail = Null;
-        $post->save();
-
-        return redirect(route('posts.edit', $post->id))->with('flash_message', 'image deleted!');
-    }
-
-
-
-
-
     public function index()
     {
         $posts = Post::orderBy("id", "desc")->with('category', 'tags')->paginate(9);
-
-    
         return view('admin.posts.index', compact('posts'));
     }
 
@@ -140,4 +122,20 @@ class PostController extends Controller
 
         return Redirect::back()->with('flash_message', 'post deleted!');
     }
+
+
+
+    
+    public function destroyImg(Request $request)
+    {
+        $post = Post::find($request->id);
+
+        Storage::delete($post->thumbnail);
+
+        $post->thumbnail = Null;
+        $post->save();
+
+        return redirect(route('posts.edit', $post->id))->with('flash_message', 'image deleted!');
+    }
+    
 }
