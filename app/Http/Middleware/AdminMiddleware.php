@@ -21,6 +21,7 @@ class AdminMiddleware
         if(Auth::check() && Auth::user()->is_admin){
             return $next($request);
         }
-        abort(404);
+        // abort(404);
+        return redirect(route('home'))->with('flash_message', 'try to logged in');
     }
 }
