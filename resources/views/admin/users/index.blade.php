@@ -57,9 +57,13 @@
                             </thead>
                             <tbody>
                                 @foreach ($users as $user)
-                                    <tr @if ($user->banned == 1)
+                                    <tr 
+                                    @if ($user->banned == 1)
                                         style="background-color: #eaa4a4;"
                                 @endif
+                                @if ($user->is_admin == 3)
+                                style="background-color: #b2b2ff;"
+                        @endif
                                 >
                                 <td>{{ $user->id }}</td>
                                 <td>{{ $user->name }}</td>

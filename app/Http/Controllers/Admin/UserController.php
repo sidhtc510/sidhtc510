@@ -82,9 +82,15 @@ class UserController extends Controller
             $user->banned = 0;
         }
 
+        if (isset($request->sellerStatus)) {
+            $user->is_admin = 3;
+        }else{
+            $user->is_admin = 0;
+        }
+
         $user->update($request->all());
 
-        return redirect(route('users.index'))->with('flash_message', 'User ban status changed!');
+        return redirect(route('users.index'))->with('flash_message', 'User status changed!');
     }
 
     /**

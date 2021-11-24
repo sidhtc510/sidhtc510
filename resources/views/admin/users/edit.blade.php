@@ -49,9 +49,9 @@
                             <div class="form-group">
                                 <label for="disabledTextInput">Пользователь </label>
                                 
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="{{$user->name}}">
+                                <input type="text" id="disabledTextInput" class="form-control" placeholder="{{$user->name}}" disabled>
                               <br>
-                              <input type="text" id="disabledTextInput" class="form-control" placeholder="{{$user->email}}">
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder="{{$user->email}}" disabled>
                             </div>
                             <!-- /.card-body -->
 
@@ -63,6 +63,17 @@
                                     @endif
                                     >
                                     <label class="custom-control-label " style="font-weight: 400" for="customSwitch3">Забанить?</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                    <input type="checkbox" class="custom-control-input" id="SwitchSellerStatus" name="sellerStatus" 
+                                    @if ($user->is_admin == 3)
+                                    checked
+                                    @endif
+                                    >
+                                    <label class="custom-control-label " style="font-weight: 400" for="SwitchSellerStatus">Статус продавца</label>
                                 </div>
                             </div>
                         </div>
