@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class AdminMiddleware
+class SellerMiddleware
 {
     /**
      * Handle an incoming request.
@@ -18,10 +18,10 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next)
     {
 
-        if(Auth::check() && Auth::user()->is_admin == 1){
+        if(Auth::check() && Auth::user()->is_admin == 3){
             return $next($request);
         }
         // abort(404);
-        return redirect(route('home'))->with('flash_message', 'try to logged in as admin');
+        return redirect(route('home'))->with('flash_message', 'Try to logged in as seller');
     }
-}
+}   
