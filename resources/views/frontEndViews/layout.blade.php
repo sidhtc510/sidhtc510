@@ -65,11 +65,13 @@
                         <li><a href="{{ route('logout') }}">Logout
                                 ({{ auth()->user()->name }} | {{ auth()->user()->email }})</a></li>
 
-                        @if (Auth::user()->is_admin)
+                        @if (Auth::user()->is_admin == 1)
                             <li><a href="{{ route('admin.index') }}">Админка </a></li>
+                       
+                    @elseif (Auth::user()->is_admin == 3)
+                        <li><a href="{{ route('seller.index') }}">Seller Dashboard </a></li>
                         @endif
-                    @else
-
+                        @else
 
                         <li class="dropdown"><a href="#"><span>Cabinet</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
