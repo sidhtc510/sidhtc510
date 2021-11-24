@@ -8,6 +8,7 @@ use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -29,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        Schema::defaultStringLength(191); /*для успешного выполнения миграций */
 
         /**
          *   отобразит на страницу все sql запросы
@@ -97,6 +98,8 @@ class AppServiceProvider extends ServiceProvider
             $view->with('sideBar_tags', $sideBar_tags);
 
             // Cache::flush();
+
+            
         });
     }
 }
