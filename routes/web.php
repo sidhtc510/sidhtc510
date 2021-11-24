@@ -1,20 +1,21 @@
 <?php
 
+use App\Http\Livewire\Posts;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\Admin\ClearCacheController;
 use App\Http\Controllers\TagFrontController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\PostFrontController;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\TestLenovoController;
 use App\Http\Controllers\SearchFrontController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\CategoryFrontController;
+use App\Http\Controllers\Seller\SellerController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ClearCacheController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
-use App\Http\Controllers\TestLenovoController;
-use App\Http\Livewire\Posts;
 
 /**
  * 
@@ -59,3 +60,7 @@ Route::group(['middleware' => 'guest'], function () {
 });
 Route::get('/logout', [UserController::class, 'logout'])->name('logout')->middleware('auth');
 /****************************************************/
+
+Route::group(['prefix' => 'seller', 'middleware' => 'seller'], function () {
+    Route::get('/', [SellerController::class, 'index'])->name('seller.index');
+});

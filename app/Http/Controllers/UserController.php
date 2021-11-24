@@ -72,13 +72,17 @@ class UserController extends Controller
                 Auth::logout();
                 return redirect()->home();
             } else {
-                if (Auth::user()->is_admin) {
+                if (Auth::user()->is_admin == 1) {
                     session()->flash('flash_message', 'You are loged in as Admin');
                     return redirect()->home();
                     // return redirect()->route('admin.index');
+                 } elseif (Auth::user()->is_admin == 3) {
+                    session()->flash('flash_message', 'You are loged in as Seller');
+                    return redirect()->home();
+                    // return redirect()->route('seller.index');
                 } else {
 
-                    session()->flash('flash_message', 'Hello ' . Auth::user()->name . ', you are loged in!');
+                    session()->flash('flash_message', 'Hello ' . Auth::user()->name . ', You are loged in!');
                     return redirect()->home();
                 }
             }
