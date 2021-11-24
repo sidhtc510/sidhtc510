@@ -22,6 +22,6 @@ class SellerMiddleware
             return $next($request);
         }
         // abort(404);
-        return redirect(route('home'))->with('flash_message', 'Try to logged in as seller');
+        return redirect(route('home'))->with('flash_message', 'Try to logged in as SELLER');
     }
 }   
