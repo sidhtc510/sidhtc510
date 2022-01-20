@@ -30,6 +30,7 @@ class slider extends Model
             return $request->file('thumbnail')->store("images/{$folder}");
         }
         // return $image;
+        
         return null;
     }
 
