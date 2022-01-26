@@ -51,13 +51,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
  * Login adn registration middleware and logout
  */
 Route::group(['middleware' => 'guest'], function () {
-    Route::controller(UserController::class)->group(function () {
-        Route::get('/register', 'create')->name('register.create');
-        Route::post('/register', 'store')->name('register.store');
+    Route::get('/register', [UserController::class, 'create'])->name('register.create');
+    Route::post('/register', [UserController::class, 'store'])->name('register.store');
 
-        Route::get('/login', 'loginForm')->name('login.create');
-        Route::post('/login', 'login')->name('login');
-    });
+    Route::get('/login', [UserController::class, 'loginForm'])->name('login.create');
+    Route::post('/login', [UserController::class, 'login'])->name('login');
 });
 Route::get('/logout', [UserController::class, 'logout'])->name('logout')->middleware('auth');
 /****************************************************/
