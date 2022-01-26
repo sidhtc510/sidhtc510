@@ -43,7 +43,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/cc', [ClearCacheController::class, 'index'])->name('clearCache');
 
     Route::resource('/sliders', SliderController::class);
-
 });
 /****************************************************/
 

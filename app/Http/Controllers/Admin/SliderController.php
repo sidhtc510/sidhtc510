@@ -17,9 +17,9 @@ class SliderController extends Controller
      */
     public function index()
     {
-        
+
         $sliders = Slider::all();
-        
+
         return view('admin.sliders.index', compact('sliders'));
     }
 
@@ -33,6 +33,7 @@ class SliderController extends Controller
         return view('admin.sliders.create');
     }
 
+
     /**
      * Store a newly created resource in storage.
      *
@@ -42,17 +43,23 @@ class SliderController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            
+
             'thumbnail' => 'required|image',
         ]);
 
         $data = $request->all();
+  
+
+
+
+        // 
+        // dd($request);
 
         $data['thumbnail'] = Slider::uploadImage($request);
 
         Slider::create($data);
 
-
+// dd($data);
         return redirect(route('sliders.index'))->with('flash_message', 'image added!');
     }
 
@@ -99,7 +106,7 @@ class SliderController extends Controller
     public function destroy($id)
     {
         $slider = Slider::find($id);
-     
+
         Storage::delete($slider->thumbnail);
 
         Slider::destroy($id);

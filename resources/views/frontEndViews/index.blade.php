@@ -22,11 +22,11 @@
                             <img class="d-block w-100" src="{{ $slider->getImage() }}">
                             {{-- img placeholder https://via.placeholder.com/640x150 --}}
                         </div>
-                        @php
+                        {{-- @php
                             if ($is_active) {
                                 $is_active = false;
                             }
-                        @endphp
+                        @endphp --}}
                     @endforeach
 
                 </div>
