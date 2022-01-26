@@ -15,18 +15,18 @@
 
                     
                     @php
-                        $is_active = false; //to active slider, set "true"
+                        $is_active = true; //to active slider, set "true"
                     @endphp
                     @foreach ($sliders as $slider)
                         <div class="carousel-item @php if ($is_active) echo ' active' @endphp ">
-                            <img class="d-block w-100" src="{{ $slider->getImage() }}">
+                            <img class="d-block w-100 h-25" src="{{ $slider->getImage() }}">
                             {{-- img placeholder https://via.placeholder.com/640x150 --}}
                         </div>
-                        {{-- @php
+                        @php
                             if ($is_active) {
                                 $is_active = false;
                             }
-                        @endphp --}}
+                        @endphp
                     @endforeach
 
                 </div>
