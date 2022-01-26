@@ -59,7 +59,7 @@ class SliderController extends Controller
 
         Slider::create($data);
 
-
+// dd($data);
         return redirect(route('sliders.index'))->with('flash_message', 'image added!');
     }
 
