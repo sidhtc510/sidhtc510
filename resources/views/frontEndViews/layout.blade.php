@@ -40,25 +40,17 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
 
-                    <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+
+
+                    <li class="dropdown" alt="PAGES">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu</a>
+                        @include('frontEndViews.categoriesMenu')
                     </li>
 
-                    <li><a href="services.html">Services</a></li>
+
+
+
+                    {{-- <li><a href="services.html">Services</a></li> --}}
 
 
                     @auth
@@ -67,11 +59,11 @@
 
                         @if (Auth::user()->is_admin == 1)
                             <li><a href="{{ route('admin.index') }}">Админка </a></li>
-                       
-                    @elseif (Auth::user()->is_admin == 3)
-                        <li><a href="{{ route('seller.index') }}">Seller Dashboard </a></li>
+
+                        @elseif (Auth::user()->is_admin == 3)
+                            <li><a href="{{ route('seller.index') }}">Seller Dashboard </a></li>
                         @endif
-                        @else
+                    @else
 
                         <li class="dropdown"><a href="#"><span>Cabinet</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>

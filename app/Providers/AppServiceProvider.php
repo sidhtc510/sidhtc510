@@ -46,10 +46,20 @@ class AppServiceProvider extends ServiceProvider
         //     Log::info($query->sql);
         // });
 
+        view()->composer('frontEndViews.categoriesMenu', function ($view) {
+            /****
+             * дерево категорий
+             */
+            $categories = Category::whereNull('category_id')
+                ->with('childrenCategories')
+                ->get();
+            $view->with('categories', $categories);
+        });
+
+
 
 
         view()->composer('frontEndViews.sideBar', function ($view) {
-
             /***
              * 
              * Вывод списка категорий в сайдбар
@@ -99,7 +109,7 @@ class AppServiceProvider extends ServiceProvider
 
             // Cache::flush();
 
-            
+
         });
     }
 }
