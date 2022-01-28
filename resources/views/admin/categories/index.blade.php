@@ -56,19 +56,30 @@
                                 </tr>
                             </thead>
                             <tbody>
+
+
+
+
+
+
+
                                 @foreach ($categories as $category)
+                                  
+                                    
+
+                                    
                                     <tr>
                                         <td>{{ $category->id }}</td>
-                                        <td>{{ $category->title }}</td>
+                                        <td >{{ $category->title }}</td>
                                         <td>
                                             {{ $category->slug }}
                                         </td>
                                         <td>
-
-                                            <a href="{{ route('categories.show', $category->id) }}"
+ 
+                                            {{-- <a href="{{ route('categories.show', $category->id) }}"
                                                 class="btn btn-success btn-sm float-left mr-1">
                                                 <i class="fas fa-eye"></i>
-                                            </a>
+                                            </a> --}}
 
                                             <a href="{{ route('categories.edit', $category->id) }}"
                                                 class="btn btn-info btn-sm float-left mr-1">
@@ -86,6 +97,8 @@
 
                                         </td>
                                     </tr>
+                        
+
                                 @endforeach
 
 

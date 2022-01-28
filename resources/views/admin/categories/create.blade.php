@@ -53,6 +53,25 @@
                         </div>
                         <!-- /.card-body -->
 
+
+
+                        <div class="card-body">
+                            <div class="col-sm-6">
+                                <!-- select -->
+                                <div class="form-group">
+                                    <label>Выбор родительской категории</label>
+                                    <select name="category_id" class="form-control">
+                                        <option value="@php
+                                            NULL
+                                        @endphp">Родительская категория</option>
+                                        @foreach ($categories as $category)
+                                            <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                        @endforeach                                      
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="card-footer">
                             <button type="submit" class="btn btn-primary">Добавить</button>
                         </div>

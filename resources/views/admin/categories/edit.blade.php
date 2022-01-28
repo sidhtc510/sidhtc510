@@ -50,9 +50,46 @@
                                 <label for="title">Название категории</label>
                                 <input type="text" class="form-control" @error('title') is-invalid @enderror id="title"
                                     name="title" value="{{ $category->title }}">
+
+                                    @if ($category->parentCategory == null)
+                                    Является родительской категорией
+                             
+                                    @endif
+                                    
                             </div>
 
-                            <!-- /.card-body -->
+                           {{-- @dd($category) --}}
+                           {{-- @dd($nullCategories) --}}
+                            <div class="card-body">
+                            <div class="col-sm-6">
+                                <!-- select -->
+                                <div class="form-group">
+                                    <label>Выбор родительской категории</label>
+                                    <select name="category_id" class="form-control">
+                                        @if ($category->parentCategory == null)
+                                        <option selected value="@php NULL @endphp">Родительская категория</option>
+                                                @foreach ($nullCategories as $nullCategory)
+                                                    <option  value="{{$nullCategory->id}}">{{$nullCategory->title}}</option>
+                                                @endforeach
+                                        @else
+                                                @foreach ($nullCategories as $nullCategory)
+                                                    @if ($category->parentCategory->id == $nullCategory->id)
+                                                        @php
+                                                            $selected = "selected" 
+                                                        @endphp 
+                                                    @else
+                                                         {{$selected = null}}
+                                                    @endif
+                                                     <option  value="{{$nullCategory->id}}">{{$nullCategory->title}}</option>
+                                                @endforeach
+                                                <option value="@php NULL @endphp">Родительская категория</option>
+                                        @endif                     
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                             <div class="form-group">
                                 <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">

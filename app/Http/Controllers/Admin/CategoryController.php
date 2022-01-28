@@ -27,7 +27,9 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.categories.create');
+        // $categories = Category::all();
+        $categories = Category::whereNull('category_id')->get();
+        return view('admin.categories.create', compact('categories'));
     }
 
     /**
@@ -38,9 +40,10 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-
+        // dd($request);
         $request->validate([
             'title' => 'required',
+            // 'category_id' => 'required',
         ]);
 
         /* 
@@ -69,7 +72,7 @@ class CategoryController extends Controller
     {
 
         $data = Category::find($id);
-        // dd($data);
+
         return view('admin.categories.show', compact('data'));
     }
 
@@ -81,9 +84,14 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        $category = Category::find($id);
 
-        return view('admin.categories.edit', compact('category'));
+        // $category = Category::find($id);
+
+        $category = Category::with('parentCategory')->find($id); /*достаем родительскую категорию по отношению к дочерней (id дочерней категории) */
+        $nullCategories = Category::whereNull('category_id')->get(); /* достаем Только родительскте категории (все что равно null)*/
+
+
+        return view('admin.categories.edit', compact('category', 'nullCategories'));
     }
 
     /**
@@ -130,15 +138,16 @@ class CategoryController extends Controller
     public function destroy($id)
     {
 
-        // Category::destroy($id);
-        // return Redirect::back()->with('flash_message', 'Category deleted!');
-
-
         $category = Category::find($id);
-      
         if ($category->posts->count()) {
             return redirect()->route('categories.index')->with('error', 'Ошибка! Категория привязана к Посту');
         }
+
+        if ($category->childrenCategories->count()) {
+            return redirect()->route('categories.index')->with('error', 'Ошибка! Это родительская категория и у нее есть дочернии категории"');
+        }
+
+
         $category->delete();
         return redirect()->route('categories.index')->with('flash_message', 'Категория удалена');
     }

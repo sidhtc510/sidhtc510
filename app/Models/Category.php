@@ -18,17 +18,22 @@ class Category extends Model
 
     // Категории бесконечной вложенности при помощи рекурсивных отношений hasMany
     // https://laravel.demiart.ru/recursive-hasmany-relationship-with-unlimited-subcategories/
-    public function categories()
+    public function categories() 
     {
-        return $this->hasMany(Category::class);
+        return $this->hasMany(Category::class)->with('childrenCategories');
     }
 
     public function childrenCategories()
     {
-        return $this->hasMany(Category::class)->with('categories');
+       return  $this->hasMany(Category::class)->with('categories');
+      
     }
 
-
+    public function parentCategory()
+    {
+       return  $this->belongsTo(Category::class, 'category_id', 'id');
+    }
+  
 
 
 
