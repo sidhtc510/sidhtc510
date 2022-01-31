@@ -107,11 +107,7 @@ class CategoryController extends Controller
             'title' => 'required',
         ]);
 
-
-
         $category = Category::find($id);
-
-
 
         if (isset($request->checkSlug)) {
 
@@ -121,8 +117,6 @@ class CategoryController extends Controller
         */
             $category->slug = null;
         }
-
-
 
         $category->update($request->all());
 
@@ -139,6 +133,7 @@ class CategoryController extends Controller
     {
 
         $category = Category::find($id);
+        
         if ($category->posts->count()) {
             return redirect()->route('categories.index')->with('error', 'Ошибка! Категория привязана к Посту');
         }

@@ -53,6 +53,7 @@
                 <h2>Список всех постов</h2>
             </div>
 
+
             @foreach ($posts as $post)
                 @include('frontEndViews.cardOfPosts')
             @endforeach
