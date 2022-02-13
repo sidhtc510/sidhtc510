@@ -9,6 +9,7 @@
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ asset('assets/admin/css/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/assemblyAdmin.css') }}">
 
 
     <style>
@@ -23,13 +24,34 @@
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
     <div class="wrapper">
+
+
+        <div class="plusMenu">
+            <li class="nav-item dropdown show">
+                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"
+                    class="nav-link">+</a>
+                <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow show"
+                    style="left: 0px; right: inherit;">
+                    <li><a href="{{ route('posts.create') }}" class="dropdown-item">Пост</a></li>
+                    <li><a href="{{ route('sliders.create') }}" class="dropdown-item">Слайдер</a></li>
+                    <li><a href="{{ route('categories.create') }}" class="dropdown-item">Категория </a></li>
+                    <li><a href="{{ route('tags.create') }}" class="dropdown-item">Тег </a></li>
+                    
+                </ul>
+            </li>
+        </div>
+
+
+
+
+
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" data-enable-remember="false" href="#" role="button"><i
-                            class="fas fa-bars"></i></a>
+                    <a class="nav-link" data-widget="pushmenu" data-enable-remember="false" href="#"
+                        role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 {{-- <li class="nav-item d-none d-sm-inline-block">
                     <a href="../../index3.html" class="nav-link">Home</a>
@@ -192,7 +214,7 @@
                         <a href="{{ route('users.index') }}">
                             Пользователи
                         </a>
-                       
+
                     </li>
                     <li class="m-2">
                         <a href="{{ route('categories.index') }}">
@@ -210,7 +232,7 @@
                     </li>
                     <li class="m-2">
                         <a href="{{ route('posts.index') }}">
-                            Посты 
+                            Посты
                         </a>
                         <a href="{{ route('posts.create') }}" class="pl-4">
                             <i class="fas fa-plus"></i></a>
@@ -218,12 +240,12 @@
 
                     <li class="m-2">
                         <a href="{{ route('sliders.index') }}">
-                            Слайдер 
+                            Слайдер
                         </a>
                         <a href="{{ route('sliders.create') }}" class="pl-4">
                             <i class="fas fa-plus"></i></a>
                     </li>
-<hr>
+                    <hr>
                     <li class="m-2">
                         <a href="{{ route('clearCache') }}">
                             Очистить кэш
@@ -333,7 +355,7 @@
             bsCustomFileInput.init();
         });
     </script>
-@livewireScripts
+    @livewireScripts
 </body>
 
 </html>

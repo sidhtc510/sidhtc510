@@ -54,13 +54,13 @@ mix.copy('resources/assets/admin/js/adminlte.min.js.map', 'public/assets/admin/j
  * 
  * 
  * FRONTEND
- * resources\assets\front\bst
+ * resources/assets/front/bst
  * 
  * 
  */
 
- mix.styles([
-    
+mix.styles([
+
     'resources/assets/front/bst/vendor/animate.css/animate.min.css',
     'resources/assets/front/bst/vendor/aos/aos.css',
     'resources/assets/front/bst/vendor/bootstrap/css/bootstrap.min.css',
@@ -70,7 +70,15 @@ mix.copy('resources/assets/admin/js/adminlte.min.js.map', 'public/assets/admin/j
     'resources/assets/front/bst/vendor/swiper/swiper-bundle.min.css',
     'resources/assets/front/bst/css/style.css',
 
+
 ], 'public/assets/front/css/main.css')
+
+
+mix.styles([
+
+    'resources/assets/admin/css/main.css'
+
+], 'public/assets/admin/css/assemblyAdmin.css')
 
 
 
@@ -86,7 +94,7 @@ mix.scripts([
     'resources/assets/front/bst/vendor/swiper/swiper-bundle.min.js',
     'resources/assets/front/bst/vendor/waypoints/noframework.waypoints.js',
     'resources/assets/front/bst/js/main.js',
-    
+
 ], 'public/assets/front/js/script.js')
 
 mix.copyDirectory('resources/assets/front/bst/img', 'public/assets/front/img')

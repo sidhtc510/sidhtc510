@@ -3,7 +3,7 @@
     <div class="entry-img">
         <a href="{{ route('posts.single', ['slug' => $post->slug]) }}"> <img src="{{ $post->getImage() }}" alt="" class="img-fluid"> </a>
     </div>
-
+   
     <h2 class="entry-title">
         <a href="{{ route('posts.single', ['slug' => $post->slug]) }}">{{ $post->title }}</a>
     </h2>
