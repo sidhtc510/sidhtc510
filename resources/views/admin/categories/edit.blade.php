@@ -53,7 +53,6 @@
 
                                     @if ($category->parentCategory == null)
                                     Является родительской категорией
-                             
                                     @endif
                                     
                             </div>

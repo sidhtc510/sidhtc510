@@ -12,6 +12,7 @@ class slider extends Model
 {
   use HasFactory;
 
+
   protected $fillable = [
     'thumbnail',
   ];
@@ -25,7 +26,11 @@ class slider extends Model
         Storage::delete($image);
       }
       $folder = date('Y-m-d');
+
       return $request->file('thumbnail')->store("images/{$folder}");
+      // Storage::putFile("images/{$folder}", $request->file('thumbnail'), 'public');
+      
+      // return $image;
     }
     // return $image;
 
