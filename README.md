@@ -4,4 +4,4 @@
 
 <a href="https://www.linkedin.com/in/sidhtc510/"><img src="https://github.com/sidhtc510/githubSettings/blob/main/linkedin.png"> Anatoliy`s linkedIn</a>
 
-<a href="mailto:sidhtc510@gmail.com"><img src="https://github.com/sidhtc510/githubSettings/blob/main/telegram.png"> Send Email</a>
+<a href="mailto:sidhtc510@gmail.com"><img src="https://github.com/sidhtc510/githubSettings/blob/main/mail.png"> Send Email</a>
