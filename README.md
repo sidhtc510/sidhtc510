@@ -1,4 +1,4 @@
-<img src="https://github.com/sidhtc510/githubSettings/blob/main/bl1672050151562.jpg">
+<!-- <img src="https://github.com/sidhtc510/githubSettings/blob/main/bl1672050151562.jpg"> -->
 
 <a href="https://t.me/a_sid_ks" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/telegram.png"> Text me on my Telegram</a>
 
