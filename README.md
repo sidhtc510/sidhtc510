@@ -4,7 +4,6 @@
 <a href="https://t.me/a_sid_ks" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/telegram.png"> Text me on my Telegram</a>
 
 <a href="https://www.linkedin.com/in/sidhtc510/" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/linkedin.png"> Anatoliy`s linkedIn</a>
-
 <a href="mailto:sidhtc510@gmail.com" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/mail.png"> Send Email</a>
 <br/>
 <h2>Introducing</h2>
@@ -22,4 +21,29 @@ Overall, I am a highly motivated and accomplished software developer with a dive
 ● Database : MySQL, MongoDB, etc.<br/>
 ● PM Tools : Git, Github, Linux, Trello, VS Code, IntelliJ, etc.<br/>
 ● Others : Figma, Adobe Photoshop, etc.<br/>
-👉📖... learning continues<br/>
+learning continues<br/><br/>
+
+
+<h2> Soft Skills </h2>
+I held the position of team leader.<br/>
+I like work in a team.<br/>
+I love to google.<br/>
+Stress resistance.<br/>
+Responsibility.<br/>
+Conflict resolution experience.<br/>
+Organizational skill.<br/><br/>
+
+<h2>Education</h2>
+Frontend Web Developer Course on the <a href="https://tel-ran.de/">Tel-Ran.de</a><br/>
+Web Developer Course on the Udemy:<br/>
+<a href="https://www.udemy.com/course/javascript_full/">JavaScript</a><br/>
+<a href="https://www.udemy.com/course/modern_typescript/">TypeScript</a><br/>
+<a href="#">laravel - полное руководство от webformyself</a><br/>
+<a href="https://webformyself.com/verstka/?utm_medium=systema&utm_source=nashikursi&utm_campaign=verstka">Верстка</a><br/>
+<a href="https://webformyself.com/design/?utm_medium=systema&utm_source=nashikursi&utm_campaign=design
+">Дизайн</a><br/><br/>
+
+<h2>Languages</h2>
+English - A2<br/>
+Russian - native<br/>
+Ukrainian - native<br/>
