@@ -6,7 +6,7 @@
 <a href="mailto:sidhtc510@gmail.com" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/mail.png"> Send Email</a>
 <br/><br/>
 <h2>Introduce myself</h2>
-I am a software developer who is enthusiastic about tackling challenging projects and tasks. My expertise encompasses a wide range of technologies, including front-end development (JavaScript, TypeScript, React, Redux jQuery), styling (CSS3, SASS/LESS, BEM), back-end development (Node.js, PHP, MySQL, MongoDB), markup (HTML5, Markdown), and UI/UX design (user experience, accessibility, inclusive design). I also possess good skills in version control (Git, GitHub).
+I am a software developer who is enthusiastic about tackling challenging projects and tasks. My expertise encompasses a wide range of technologies, including front-end development (JavaScript, TypeScript, React, Redux), styling (CSS3, SASS/LESS, BEM), back-end development (Node.js, PHP, MySQL, MongoDB), markup (HTML5, Markdown), and UI/UX design (user experience, accessibility, inclusive design). I also possess good skills in version control (Git, GitHub).
 <br/><br/>
 Apart from my technical skills, I have hands-on experience with Agile methodologies such as Scrum and Kanban. I am well-versed with tools such as Adobe Photoshop, Pixelmator Pro, and Figma. I am also proficient in package management (npm, Yarn).
 <br/><br/>
@@ -16,7 +16,7 @@ Overall, I am a highly motivated and accomplished software developer with a dive
 
 <h2>Hard skills</h2>
 ● Frontend-Basic : HTML/HTML5, styling (CSS3, SASS/LESS, BEM), Javascript, Pixel Perfect, Responsive Design, Bootstrap, Material UI, etc.<br/>
-● Frontend-Prof : JavaScript, TypeScript, React, Redux, jQuery, Webpack, etc.<br/>
+● Frontend-Prof : JavaScript, TypeScript, React, Redux, Webpack, etc.<br/>
 ● Database : MySQL, MongoDB, etc.<br/>
 ● PM Tools : Git, Github, Linux, Trello, VS Code, IntelliJ, etc.<br/>
 ● Others : Figma, Adobe Photoshop, etc.<br/>
