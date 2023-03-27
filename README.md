@@ -43,6 +43,6 @@ Online Courses:<br/>
 ">Design</a><br/><br/>
 
 <h2>Languages</h2>
-● English - A2-B1 (continue to study on <a href="https://preply.com/">preply.com</a>)<br/>
+● English - A2-B1 (I am still learning at <a href="https://preply.com/">preply.com</a>)<br/>
 ● Russian - native<br/>
 ● Ukrainian - native<br/>
