@@ -17,9 +17,9 @@ During my academic pursuits, I held the position of team leader.
 Overall, I am a highly motivated and accomplished software developer with a diverse skill set and a proven track record of success. I am always on the lookout for new and exciting opportunities to learn and grow.
 
 <h2>Hard skills</h2>
-● Frontend-Basic : HTML/HTML5, styling (CSS3, SASS/LESS, BEM), Javascript, Pixel Perfect, Responsive Design, Bootstrap, Material UI, etc.
-● Frontend-Prof : JavaScript, TypeScript, React, Redux, jQuery, Webpack, etc.
-● Database : MySQL, MongoDB, etc.
-● PM Tools : Git, Github, Linux, Trello, VS Code, IntelliJ, etc.
-● Others : Figma, Adobe Photoshop, etc.
-👉📖... learning continues
+● Frontend-Basic : HTML/HTML5, styling (CSS3, SASS/LESS, BEM), Javascript, Pixel Perfect, Responsive Design, Bootstrap, Material UI, etc.<br/>
+● Frontend-Prof : JavaScript, TypeScript, React, Redux, jQuery, Webpack, etc.<br/>
+● Database : MySQL, MongoDB, etc.<br/>
+● PM Tools : Git, Github, Linux, Trello, VS Code, IntelliJ, etc.<br/>
+● Others : Figma, Adobe Photoshop, etc.<br/>
+👉📖... learning continues<br/>
