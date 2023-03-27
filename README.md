@@ -1,11 +1,10 @@
 <!-- <img src="https://github.com/sidhtc510/githubSettings/blob/main/bl1672050151562.jpg"> -->
 
 <h2>Contact info</h2>
-<a href="https://t.me/a_sid_ks" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/telegram.png"> Text me on my Telegram</a>
-
-<a href="https://www.linkedin.com/in/sidhtc510/" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/linkedin.png"> Anatoliy`s linkedIn</a>
+<a href="https://t.me/a_sid_ks" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/telegram.png"> Text me on my Telegram</a><br/>
+<a href="https://www.linkedin.com/in/sidhtc510/" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/linkedin.png"> Anatoliy`s linkedIn</a><br/>
 <a href="mailto:sidhtc510@gmail.com" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/mail.png"> Send Email</a>
-<br/>
+<br/><br/>
 <h2>Introducing</h2>
 I am a software developer who is enthusiastic about tackling challenging projects and tasks. My expertise encompasses a wide range of technologies, including front-end development (JavaScript, TypeScript, React, Redux jQuery), styling (CSS3, SASS/LESS, BEM), back-end development (Node.js, PHP, MySQL, MongoDB), markup (HTML5, Markdown), and UI/UX design (user experience, accessibility, inclusive design). I also possess good skills in version control (Git, GitHub).
 <br/><br/>
@@ -25,25 +24,25 @@ learning continues<br/><br/>
 
 
 <h2> Soft Skills </h2>
-I held the position of team leader.<br/>
-I like work in a team.<br/>
-I love to google.<br/>
-Stress resistance.<br/>
-Responsibility.<br/>
-Conflict resolution experience.<br/>
-Organizational skill.<br/><br/>
+● I held the position of team leader.<br/>
+● I like work in a team.<br/>
+● I love to google.<br/>
+● Stress resistance.<br/>
+● Responsibility.<br/>
+● Conflict resolution experience.<br/>
+● Organizational skill.<br/><br/>
 
 <h2>Education</h2>
 Frontend Web Developer Course on the <a href="https://tel-ran.de/">Tel-Ran.de</a><br/>
-Web Developer Course on the Udemy:<br/>
-<a href="https://www.udemy.com/course/javascript_full/">JavaScript</a><br/>
-<a href="https://www.udemy.com/course/modern_typescript/">TypeScript</a><br/>
-<a href="#">laravel - полное руководство от webformyself</a><br/>
-<a href="https://webformyself.com/verstka/?utm_medium=systema&utm_source=nashikursi&utm_campaign=verstka">Верстка</a><br/>
-<a href="https://webformyself.com/design/?utm_medium=systema&utm_source=nashikursi&utm_campaign=design
+Online Courses:<br/>
+● <a href="https://www.udemy.com/course/javascript_full/">JavaScript</a><br/>
+● <a href="https://www.udemy.com/course/modern_typescript/">TypeScript</a><br/>
+● <a href="#">laravel - полное руководство от webformyself</a><br/>
+● <a href="https://webformyself.com/verstka/?utm_medium=systema&utm_source=nashikursi&utm_campaign=verstka">Верстка</a><br/>
+● <a href="https://webformyself.com/design/?utm_medium=systema&utm_source=nashikursi&utm_campaign=design
 ">Дизайн</a><br/><br/>
 
 <h2>Languages</h2>
-English - A2<br/>
-Russian - native<br/>
-Ukrainian - native<br/>
+● English - A2<br/>
+● Russian - native<br/>
+● Ukrainian - native<br/>
