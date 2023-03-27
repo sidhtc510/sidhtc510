@@ -35,14 +35,14 @@ learning continues<br/><br/>
 <h2>Education</h2>
 Frontend Web Developer Course on the <a href="https://tel-ran.de/">Tel-Ran.de</a><br/>
 Online Courses:<br/>
-● <a href="https://www.udemy.com/course/javascript_full/">JavaScript</a><br/>
-● <a href="https://www.udemy.com/course/modern_typescript/">TypeScript</a><br/>
-● <a href="#">laravel - полное руководство от webformyself</a><br/>
-● <a href="https://webformyself.com/verstka/?utm_medium=systema&utm_source=nashikursi&utm_campaign=verstka">Верстка</a><br/>
+● <a href="https://www.udemy.com/course/javascript_full/">JavaScript on Udemy</a><br/>
+● <a href="https://www.udemy.com/course/modern_typescript/">TypeScript on Udemy</a><br/>
+● <a href="#">laravel - full guide on webformyself</a><br/>
+● <a href="https://webformyself.com/verstka/?utm_medium=systema&utm_source=nashikursi&utm_campaign=verstka">Layout</a><br/>
 ● <a href="https://webformyself.com/design/?utm_medium=systema&utm_source=nashikursi&utm_campaign=design
-">Дизайн</a><br/><br/>
+">Design</a><br/><br/>
 
 <h2>Languages</h2>
-● English - A2<br/>
+● English - A2-B1 (continue to study on <a href="https://preply.com/">preply.com</a>)<br/>
 ● Russian - native<br/>
 ● Ukrainian - native<br/>
