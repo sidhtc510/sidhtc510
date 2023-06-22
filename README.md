@@ -49,7 +49,7 @@ Online Courses:<br/>
     наглядная демонстрация работы auto-fill и
     auto-fit в гридах. Делал для коллег студентов. Сделал копирование по клику.<br>
     <h3>● JavaScript</h3>
-    <a href="https://cross-null.onrender.com/ ">cross-null.onrender.com</a> - Крестики-Нолики. Написан на javaScript
+    <a href="https://cross-null.onrender.com/ ">cross-null</a> - Крестики-Нолики. Написан на javaScript
     <br>
     <h3>● React</h3>
     <a href="https://mainstore-redux.onrender.com ">Main Store</a> - Работа с redux thunk (без toolkit). Добавление,
