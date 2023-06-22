@@ -33,7 +33,7 @@ learning continues<br/><br/>
 ● Organizational skill.<br/><br/>
 
 <h2>Education</h2>
-Frontend Web Developer Course on the <a href="https://tel-ran.de/">Tel-Ran.de</a><br/>
+● Frontend Web Developer Course on the <a href="https://tel-ran.de/">Tel-Ran.de</a><br/>
 Online Courses:<br/>
 ● <a href="https://www.udemy.com/course/javascript_full/">JavaScript on Udemy</a><br/>
 ● <a href="https://www.udemy.com/course/modern_typescript/">TypeScript on Udemy</a><br/>
@@ -41,6 +41,16 @@ Online Courses:<br/>
 ● <a href="https://webformyself.com/verstka/?utm_medium=systema&utm_source=nashikursi&utm_campaign=verstka">Layout</a><br/>
 ● <a href="https://webformyself.com/design/?utm_medium=systema&utm_source=nashikursi&utm_campaign=design
 ">Design</a><br/><br/>
+
+
+<h2>Pet projects</h2>
+
+● <a href="https://cross-null.onrender.com/ ">cross-null.onrender.com</a> - Крестики-Нолики. Написан на javaScript <br>
+● <a href="https://sidhtc510.github.io/grid_flex_position/ ">grid_flex_position</a> - Не интерактивная, но всё же наглядная демонстрация работы auto-fill и
+auto-fit в гридах. Делал для коллег студентов. Сделал копирование по клику.<br>
+● <a href="https://mainstore-redux.onrender.com ">Main Store</a> - Работа с redux thunk (без toolkit). Добавление, удаление товаров. Корзина.
+Сортировка, фильтрация.<br>
+● <a href="https://flexdynamic.onrender.com">Flex Dynamic</a>  - Интерактивная демонстрация работы flex. Написано на react
 
 <h2>Languages</h2>
 ● English - B1 (I am still learning at <a href="https://preply.com/">preply.com</a>)<br/>
