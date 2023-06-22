@@ -44,14 +44,14 @@ Online Courses:<br/>
 
 
 <h2>Pet projects</h2>
-    ● <h3>Верстка</h3>
+    <h3>● Верстка</h3>
     <a href="https://sidhtc510.github.io/grid_flex_position/ ">grid_flex_position</a> - Не интерактивная, но всё же
     наглядная демонстрация работы auto-fill и
     auto-fit в гридах. Делал для коллег студентов. Сделал копирование по клику.<br>
-    ● <h3>JavaScript</h3>
+    <h3>● JavaScript</h3>
     <a href="https://cross-null.onrender.com/ ">cross-null.onrender.com</a> - Крестики-Нолики. Написан на javaScript
     <br>
-    ●  <h3>React</h3>
+    <h3>● React</h3>
     <a href="https://mainstore-redux.onrender.com ">Main Store</a> - Работа с redux thunk (без toolkit). Добавление,
     удаление товаров. Корзина.
     Сортировка, фильтрация.<br>
