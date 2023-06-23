@@ -55,8 +55,8 @@ Online Courses:<br/>
     <a href="https://mainstore-redux.onrender.com ">Main Store</a> - Работа с redux thunk (без toolkit). Добавление,
     удаление товаров. Корзина.
     Сортировка, фильтрация.<br>
-    <a href="https://flexdynamic.onrender.com">Flex Dynamic</a> - Интерактивная демонстрация работы flex. Написано на
-    react
+    <a href="https://flexdynamic.onrender.com">Flex Dynamic</a> - Интерактивная демонстрация работы flex. Написан на
+    react <br>
     <a href="https://the-dark-light.onrender.com/">The dark light</a> - проект выполнялся в качестве домашнего задания. Написан на React. В качестве навигации использовал React-Router-Dom V6
 
 
