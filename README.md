@@ -62,6 +62,6 @@ Online Courses:<br/>
 
 
 <h2>Languages</h2>
-● English - B1 (I am still learning at <a href="https://preply.com/">preply.com</a>)<br/>
+● English - A2-B1 (I am still learning at <a href="https://preply.com/">preply.com</a>)<br/>
 ● Russian - native<br/>
 ● Ukrainian - native<br/>
