@@ -6,4 +6,4 @@
 <a href="mailto:sidhtc510@gmail.com" target="_blank"><img src="https://github.com/sidhtc510/githubSettings/blob/main/mail.png"> Send Email</a>
 <br/><br/>
 <h2>CV</h2>
-<a href="https://drive.google.com/file/d/1P5mn1ajyHSipvvzPqIywbvxJiTm-0fnm/view?usp=drive_link" target="_blank"> Watch my CV </a>
+<a href="https://drive.google.com/file/d/1OeuP0u0qPazHJ5Qr1UkUEbTM1-WqgRSY/view?usp=drive_link"> Watch my CV </a>
