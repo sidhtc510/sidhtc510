@@ -17,6 +17,7 @@
         than 5000 goods. PHP/JavaScript/MySQL
 </p><br />
 <h3>PET-PROJECTS All projects are fully designed by me</h3>
+<p><a href="https://cafe-restaurant.onrender.com">Cafe - Restaurant</a> - Application for bars, restaurants, cafes. Private business. React Redux-Toolkit was used in development</p>
 <p><a href="https://sidhtc510.github.io/grid_flex_position/">grid_flex_position </a>- Not interactive, but still a clear demonstration of how auto-fill and</p>
 <p><a href="https://cross-null.onrender.com/">auto-fit work in grids.</a> Made for fellow students. Made copying by click. cross-null - tic-tac-toe game. JavaScript</p>
 <p><a href="https://mainstore-redux.onrender.com/">Main Store</a> - Used redux thunk (without toolkit). Adding, removing items. Shopping cart. Sorting, filtering.</p>
