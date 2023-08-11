@@ -19,7 +19,7 @@
 <h3>PET-PROJECTS All projects are fully designed by me</h3>
 <p><a href="https://cafe-restaurant.onrender.com">Cafe - Restaurant</a> - Application for bars, restaurants, cafes. Private business. React Redux-Toolkit was used in development</p>
 <p><a href="https://sidhtc510.github.io/grid_flex_position/">grid_flex_position </a>- Not interactive, but still a clear demonstration of how auto-fill and auto-fit work in grids. Made for fellow students. Made copying by click.</p>
-<p><a href="https://cross-null.onrender.com/"></a> - Tic-Tac-Toe game. JavaScript</p>
+<p><a href="https://cross-null.onrender.com/">Let`s play</a> - Tic-Tac-Toe game. JavaScript</p>
 <p><a href="https://mainstore-redux.onrender.com/">Main Store</a> - Used redux thunk (without toolkit). Adding, removing items. Shopping cart. Sorting, filtering.</p>
 <p><a href="https://flexdynamic.onrender.com/">Flex Dynamic</a> - An interactive demonstration of how flex works. Written in react</p>
 <p><a href="https://the-dark-light.onrender.com/">The dark light </a>- The project was done as homework. It is written in React. React-Router-Dom V6 was used for navigation</p>
