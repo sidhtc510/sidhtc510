@@ -10,6 +10,11 @@
 
 <h2>Projects</h2>
 <h3>REAL-PROJECTS All projects are fully designed by me</h3>
+<p><a href="https://aqua-vit.de">https://aqua-vit.de </a>
+     - The project was developed in September 2023 for a German company
+specializing in the production of water purification filters. It is being developed using React
+and utilizes the Redux Toolkit as the state management solution.
+</p>
 <p><a href="http://immcanadahelp.com ">http://immcanadahelp.com </a>
         - Designed in 2020. Also developed a sophisticated system for calculating emigrant scores. PHP/JavaScript/MySQL
 </p>
