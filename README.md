@@ -9,7 +9,7 @@
 
 
 <h2>Projects</h2>
-<h3>REAL-PROJECTS All projects are fully designed by me</h3>
+<h3>REAL-PROJECTS</h3>
 <p><a href="https://aqua-vit.de">https://aqua-vit.de </a>
      - The project was developed in September 2023 for a German company
 specializing in the production of water purification filters. It is being developed using React
@@ -21,7 +21,7 @@ and utilizes the Redux Toolkit as the state management solution.
 <p><a href="http://mimish.zzz.com.ua ">http://mimish.zzz.com.ua</a>- Designed in 2018. Online stationery shop. More
         than 5000 goods. PHP/JavaScript/MySQL
 </p><br />
-<h3>PET-PROJECTS All projects are fully designed by me</h3>
+<h3>PET-PROJECTS</h3>
 <p><a href="https://cafe-restaurant.onrender.com">Cafe - Restaurant</a> - Application for bars, restaurants, cafes. Private business. React Redux-Toolkit was used in development</p>
 <p><a href="https://sidhtc510.github.io/grid_flex_position/">grid_flex_position </a>- Not interactive, but still a clear demonstration of how auto-fill and auto-fit work in grids. Made for fellow students. Made copying by click.</p>
 <p><a href="https://cross-null.onrender.com/">Let`s play</a> - Tic-Tac-Toe game. JavaScript</p>
