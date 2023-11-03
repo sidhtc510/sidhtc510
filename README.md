@@ -7,7 +7,7 @@
             src="https://github.com/sidhtc510/githubSettings/blob/main/mail.png"> Send Email</a>
 <br /><br />
 
-{:: comment}
+&lt;!---
 <h2>Projects</h2>
 <h3>REAL-PROJECTS</h3>
 <p><a href="https://aqua-vit.de">https://aqua-vit.de </a>
@@ -28,4 +28,4 @@ and utilizes the Redux Toolkit as the state management solution.
 <p><a href="https://mainstore-redux.onrender.com/">Main Store</a> - Used redux thunk (without toolkit). Adding, removing items. Shopping cart. Sorting, filtering.</p>
 <p><a href="https://flexdynamic.onrender.com/">Flex Dynamic</a> - An interactive demonstration of how flex works. Written in react</p>
 <p><a href="https://the-dark-light.onrender.com/">The dark light </a>- The project was done as homework. It is written in React. React-Router-Dom V6 was used for navigation</p>
-{:/comment}
+--&gt;
