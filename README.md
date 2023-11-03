@@ -1,3 +1,6 @@
+<h2>Stack</h2>
+<p>React, NextJs, Redux (Toolkit), MySQL, PostgreSQL, MongoDB</p>
+<br /><br />
 <h2>Contact info</h2>
 <a href="https://t.me/a_sid_ks" target="_blank"><img
             src="https://github.com/sidhtc510/githubSettings/blob/main/telegram.png"> Text me on Telegram</a><br />
