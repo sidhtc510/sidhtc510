@@ -1,6 +1,4 @@
 <h2>Stack</h2>
-<p>React, NextJs, Redux (Toolkit), MySQL, PostgreSQL, MongoDB</p>
-<p>
 HTML/HTML5, Javascript, React (fc), NextJS v.13+, Redux (Toolkit), React-virtualized, React-Router <br />
 styling (CSS3, BEM), Pixel Perfect, Responsive Design, Bootstrap, Material UI, Ant-Design <br />
 MySQL, PostgreSQL, MongoDB  <br />
