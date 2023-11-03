@@ -1,6 +1,14 @@
 <h2>Stack</h2>
 <p>React, NextJs, Redux (Toolkit), MySQL, PostgreSQL, MongoDB</p>
-<br /><br />
+<p>
+HTML/HTML5, Javascript, React (fc), NextJS v.13+, Redux (Toolkit), React-virtualized, React-Router <br />
+styling (CSS3, BEM), Pixel Perfect, Responsive Design, Bootstrap, Material UI, Ant-Design <br />
+MySQL, PostgreSQL, MongoDB  <br />
+Git, Github, Linux, Trello, Jira, VS Code, IntelliJ  <br />
+Figma, Adobe Photoshop   <br />
+</p>
+
+<br />
 <h2>Contact info</h2>
 <a href="https://t.me/a_sid_ks" target="_blank"><img
             src="https://github.com/sidhtc510/githubSettings/blob/main/telegram.png"> Text me on Telegram</a><br />
