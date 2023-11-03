@@ -8,7 +8,7 @@
 <br /><br />
 
 
-//<h2>Projects</h2>
+# <h2>Projects</h2>
 <h3>REAL-PROJECTS</h3>
 <p><a href="https://aqua-vit.de">https://aqua-vit.de </a>
      - The project was developed in September 2023 for a German company
